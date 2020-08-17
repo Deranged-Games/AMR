@@ -1,0 +1,229 @@
+levelDesc = "Return to the OK Corral"
+maxPlayers = 4
+
+player = {}
+
+player[0] = {
+  id = 0,
+  name = "",
+  resources = 1500,
+  raceID = 1,
+  startPos = 1,
+}
+
+player[1] = {
+  id = 1,
+  name = "",
+  resources = 1500,
+  raceID = 1,
+  startPos = 1,
+}
+
+player[2] = {
+  id = 2,
+  name = "",
+  resources = 1500,
+  raceID = 2,
+  startPos = 1,
+}  
+
+player[3] = {
+  id = 3,
+  name = "",
+  resources = 1500,
+  raceID = 2,
+  startPos = 1,
+}
+
+function DetermChunk()
+  addPoint("StartPos0", {-12500, 0, 12500}, {0, 90, 0})
+  addPoint("StartPos1", {-12500, 0, -12500}, {0, 90, 0})
+  addPoint("StartPos2", {12500, 0, -12500}, {0, -90, 0})  
+  addPoint("StartPos3", {12500, 0, 12500}, {0, -90, 0})
+
+  addAsteroid("Asteroid_1", {14500, 50, 0}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {-14500, 250, 600}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {-14500, 150, 2000}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {-14500, -50, 4500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {-14500, -250, 6000}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {-14500, 550, 7500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {-15000, 150, 10100}, 100, 100, 100, 100, 100)
+
+  addAsteroid("Asteroid_1", {14500, 50, 0}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {14500, 250, -600}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {14500, 150, -2000}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {14500, -50, -4500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {14500, -250, -6000}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {14500, 550, -7500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {15000, 150, -10100}, 100, 100, 100, 100, 100)
+
+  addAsteroid("Asteroid_1", {-14500, 50, -110}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {-14500, 250, -600}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {-14500, 150, -2000}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {-14500, -50, -4500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {-14500, -250, -6000}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {-14500, 550, -7500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {-15000, 150, -10100}, 100, 100, 100, 100, 100)
+
+  addAsteroid("Asteroid_1", {14500, 50, 110}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {14500, 250, 600}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {14500, 150, 2000}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {14500, -50, 4500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {14500, -250, 6000}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {14500, 550, 7500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {15000, 150, 10100}, 100, 100, 100, 100, 100)
+
+  addAsteroid("Asteroid_5", {15000, -1000, 4500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {15000, -1500, 500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {16000, 1000, -3000}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {17000, -500, 4500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {16000, 0, 0}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {16000, -3000, 5500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {15000, -2500, 300}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_1", {15800, 2000, -3000}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {15000, -1000, -500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {15000, -3000, -1000}, 100, 100, 100, 100, 100)
+
+  addAsteroid("Asteroid_5", {-15000, -3000, 3500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {-15000, 1500, 1500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {-16000, 4000, -1650}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {-14900, -500, -2500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {-15100, 2500, 4500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {-18000, -3000, -5500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {-15000, -3500, 3000}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_1", {-15800, 5000, -3000}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {-17000, 1000, -5500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {-16500, -4000, -1000}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {-16000, -4500, 1200}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {-16800, 2000, -2000}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {15500, 1000, -2500}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {16500, -2000, -2000}, 100, 100, 100, 100, 100)
+
+
+  addAsteroid("Asteroid_3", {14165, 1625, -13546}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {15925, -430, -12987}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {15205, -1650, -13958}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {15465, 425, -13546}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {16125, 1600, -13987}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {15505, -1440, -13958}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {15025, -1650, -12987}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {15705, 1320, -13958}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {15665, -1525, -13546}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {14465, 1525, -13546}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {14925, 1510, -13987}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {15905, -1530, -13958}, 100, 100, 100, 100, 100)
+  
+  addAsteroid("Asteroid_3", {-14165, -1625, -13546}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {-15925, 430, -12987}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {-15205, 1650, -13958}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {-15465, -425, -13546}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {-16125, -1600, -13987}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {-15505, 1440, -13958}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {-15025, 1650, -12987}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {-15705, -1320, -13958}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {-15665, 1525, -13546}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {-14465, -1525, -13546}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {-14925, -1510, -13987}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {-15905, 1530, -13958}, 100, 100, 100, 100, 100)
+
+  addAsteroid("Asteroid_3", {14165, 1625, 13546}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {15925, -430, 12987}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {15205, -1650, 13958}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {15465, 425, 13546}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {16125, 1600, 13987}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {15505, -1440, 13958}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {15025, -1650, 12987}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {15705, 1320, 13958}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {15665, -1525, 13546}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {14465, 1525, 13546}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {14925, 1510, 13987}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {15905, -1530, 13958}, 100, 100, 100, 100, 100)
+
+  addAsteroid("Asteroid_3", {-14165, -1625, 13546}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {-15925, 430, 12987}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {-15205, 1650, 13958}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {-15465, -425, 13546}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {-16125, -1600, 13987}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {-15505, 1440, 13958}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {-15025, 1650, 12987}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {-15705, -1320, 13958}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {-15665, 1525, 13546}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {-14465, -1525, 13546}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_2", {-14925, -1510, 13987}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {-15905, 1530, 13958}, 100, 100, 100, 100, 100)
+
+
+  setWorldBoundsInner({0, 0, 0}, {50000.53, 22000.09, 50000.53})
+end
+
+function NonDetermChunk()
+  addPebble("Pebble_0", {-16000, 300, -100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16100, -400, -1900}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-15900, 2900, -2600}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16000, -1300, -6000}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16100, 1300, -8100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-15900, -3300, -6200}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-15800, 1800, -7000}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16100, -2100, -5100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16400, 1400, -5500}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16500, -600, -3200}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16200, 100, -10000}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16000, -900, -12000}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16600, 200, -12500}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16100, 000, -13000}, 10000, 10000, 10000)
+
+  addPebble("Pebble_0", {-16100, -3500, 100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16300, 1200, 1900}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16100, -100, 2100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16000, 4000, 4100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16400, -1200, 3100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16500, 1300, 1800}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16600, -1900, 5600}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16300, 2100, 7200}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16900, -800, 6100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16700, 1700, 12100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16800, -100, 11100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-16000, 300, 13100}, 10000, 10000, 10000)
+
+  addPebble("Pebble_0", {16000, 300, -100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16100, -400, -1900}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {15900, 2900, -2600}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16000, -1300, -6000}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16100, 1300, -8100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {15900, -3300, -6200}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {15800, 1800, -7000}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16100, -2100, -5100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16400, 1400, -5500}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16500, -600, -3200}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16200, 100, -10000}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16000, -900, -12000}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16600, 200, -12500}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16100, 000, -13000}, 10000, 10000, 10000)
+
+  addPebble("Pebble_0", {16100, -3500, 100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16300, 1200, 1900}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16100, -100, 2100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16000, 4000, 4100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16400, -1200, 3100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16500, 1300, 1800}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16600, -1900, 5600}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16300, 2100, 7200}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16900, -800, 6100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16700, 1700, 12100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16800, -100, 11100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {16000, 300, 13100}, 10000, 10000, 10000)
+
+
+  fogSetActive(1)
+  setGlareIntensity(0)
+  fogSetColour(0, 0, 0, 1)
+  fogSetStart(1000)
+  fogSetEnd(50000)
+  fogSetType("linear")
+  fogSetDensity(1)
+
+  setLevelShadowColour(0, 0, 0, 0)
+  loadBackground("m09")
+  setSensorsManagerCameraDistances(5000, 25000)
+  setDefaultMusic("Data:sound/music/BATTLE/battle_01")
+end

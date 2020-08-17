@@ -1,0 +1,20 @@
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","InstantHit","battleshipbeam_vgr","Normal",0,5500,0,5,2,0,20,0,1,15,0,0,1,1,20,20,0.1,"Normal",1,0,7500)
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",12500,12500,"")
+AddWeaponResult(NewWeaponType,"Hit","Push","Target",-100,-100,"")
+setPenetration(NewWeaponType,100,1,{
+  PlanetKillerArmour = 0,
+},{
+  SubSystemArmour = 0.3,
+},{
+  MediumArmour = 0.5,
+})
+setAccuracy(NewWeaponType,1,{
+  Fighter = 0,
+},{
+  Corvette = 0,
+},{
+  munition = 0,
+})
+setAngles(NewWeaponType,0,-100,100,-20,35)
+setMiscValues(NewWeaponType,2.5,0)
+addAnimTurretSound(NewWeaponType,"Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON")

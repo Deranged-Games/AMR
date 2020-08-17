@@ -1,0 +1,10 @@
+NewResourceType = StartPebbleConfig()
+NewResourceType.meshRenderLimit = 5
+NewResourceType.dotRenderLimit = 90000000000000
+NewResourceType.pixelSize = 0.5
+NewResourceType.pixelColour = 
+    { 1, .5, .5, 0.5, }
+NewResourceType.SMFadeDistance = 90000000000000
+NewResourceType.SMFadeMinAlpha = 0.2
+NewResourceType.SMPixelSize = 0.5
+

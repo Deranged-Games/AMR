@@ -1,0 +1,14 @@
+-- LuaDC version 0.9.19
+-- 5/23/2004 7:16:33 PM
+-- LuaDC by Age2uN
+-- on error send source file (compiled lua) and this outputfile to Age2uN@gmx.net
+--
+NewResourceType = StartPebbleConfig()
+NewResourceType.meshRenderLimit = 5
+NewResourceType.dotRenderLimit = 90000000000000
+NewResourceType.pixelSize = 0.5
+NewResourceType.pixelColour = 
+    { 1, 1, 1, 0.5, }
+NewResourceType.SMFadeDistance = 90000000000000
+NewResourceType.SMFadeMinAlpha = 0.2
+NewResourceType.SMPixelSize = 0.5

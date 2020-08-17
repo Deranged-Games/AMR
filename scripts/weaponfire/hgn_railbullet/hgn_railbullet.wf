@@ -1,0 +1,9 @@
+hitfx = "plasma_hit_spray_dread"
+bulletfx = "bullet_tracer_combo_blue"
+nopenetratefx = "plasma_hit_spray_dread"
+deathtype = "deathCannon"
+scartype = "Plasma_Bomb/Plasma_Bomb"
+fire_sfx = "WEAPON/CARRIER/FIRE/WEAPON_CARRIER_KINETIC_AUTOGUN_SHELL"
+hit_sfx = "WEAPON/CORVETTE/IMPACT/WEAPON_CORVETTE_PULASAR_CANNON_BEAM_HIT"
+firefx = "muzzle_flash_combo_plasma_kpr_repeat"
+hit_clamp = {1.0, 1.0}

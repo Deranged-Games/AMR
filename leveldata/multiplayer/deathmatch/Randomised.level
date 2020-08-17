@@ -1,0 +1,268 @@
+levelDesc = "Orbs"
+maxPlayers = 3
+
+player = {}
+
+player[0] = {
+  id = 0,
+  name = "",
+  resources = 10000,
+  raceID = 1,
+  startPos = 0,
+}
+
+player[1] = {
+  id = 1,
+  name = "",
+  resources = 10000,
+  raceID = 2,
+  startPos = 1,
+}
+
+player[2] = {
+  id = 1,
+  name = "",
+  resources = 10000,
+  raceID = 1,
+  startPos = 2,
+}
+
+
+
+function DetermChunk()
+  x=random(0,50)-25
+  x=x*1000
+  y=random(0,50)-25
+  y=y*1000
+  z=random(0,50)-25
+  z=z*1000
+  addPoint("StartPos0", {x,y,z}, {0, random(0,360), 0})
+
+  x=random(0,50)-25
+  x=x*1000
+  y=random(0,50)-25
+  y=y*1000
+  z=random(0,50)-25
+  z=z*1000
+  addPoint("StartPos1", {x,y,z}, {0, random(0,360), 0})
+
+  x=random(0,50)-25
+  x=x*1000
+  y=random(0,50)-25
+  y=y*1000
+  z=random(0,50)-25
+  z=z*1000
+  addPoint("StartPos2", {x,y,z}, {0, random(0,360), 0})
+
+
+  limit=random(20,50)
+  red=random(5,25)*10
+  green=random(5,25)*10
+  blue=random(5,25)*10
+  Dred=random(5,25)*8
+  Dgreen=random(5,20)*8
+  Dblue=random(5,20)*8
+
+
+  for i = 0,limit,1 do
+    x=random(0,50)-25
+    x=x*1000
+    y=random(0,50)-25
+    y=y*1000
+    z=random(0,50)-25
+    z=z*1000
+
+    type=random(1,4)
+    size=random(1,50)
+
+    mx=random(0,3)-2
+    mx=mx*500
+    my=random(0,3)-2
+    my=my*500
+    mz=random(0,3)-2
+    mz=mz*500
+
+    for ii = 0,size,1 do
+      if type==3 then
+        obj=random(1,3)
+        if obj==1 then
+          for iii = 0,3,1 do --300
+            x=x+random(0,500)-250
+            y=y+random(0,500)-250
+            z=z+random(0,500)-250
+            addPebble("Pebble_0", {x,y,z}, 10000, 10000, 10000)
+          end
+        end
+        if obj==3 then
+          for iii = 0,3,1 do --300
+            x=x+random(0,500)-250
+            y=y+random(0,500)-250
+            z=z+random(0,500)-250
+            addPebble("Pebble_0", {x,y,z}, 10000, 10000, 10000)
+          end
+          mx=random(0,3)-2
+          mx=mx*500
+          my=random(0,3)-2
+          my=my*500
+          mz=random(0,3)-2
+          mz=mz*500
+        end
+        if obj==2 then
+          addAsteroid("Asteroid_3", {x,y,z}, 100, 100, 100, 100, 100)
+          for iii = 0,2,1 do --300
+            x=x+random(0,500)-250
+            y=y+random(0,500)-250
+            z=z+random(0,500)-250
+            addPebble("Pebble_0", {x,y,z}, 10000, 10000, 10000)
+          end
+        end
+        x=x+mx
+        y=y+my
+        z=z+mz
+
+        x=x+random(0,100)-50
+        y=y+random(0,100)-50
+        z=z+random(0,100)-50
+      end
+      if type==1 then
+        obj=random(1,3)
+        if obj==1 then
+          for iii = 0,3,1 do --300
+            x=x+random(0,500)-250
+            y=y+random(0,500)-250
+            z=z+random(0,500)-250
+            addPebble("Pebble_0", {x,y,z}, 10000, 10000, 10000)
+          end
+        end
+        if obj==3 then
+          for iii = 0,5,1 do --300
+            x=x+random(0,500)-250
+            y=y+random(0,500)-250
+            z=z+random(0,500)-250
+            addPebble("Pebble_0", {x,y,z}, 10000, 10000, 10000)
+          end
+          mx=random(0,3)-2
+          mx=mx*500
+          my=random(0,3)-2
+          my=my*500
+          mz=random(0,3)-2
+          mz=mz*500
+        end
+        if obj==2 then
+          addAsteroid("Asteroid_5", {x,y,z}, 100, 100, 100, 100, 100)
+          for iii = 0,2,1 do --300
+            x=x+random(0,500)-250
+            y=y+random(0,500)-250
+            z=z+random(0,500)-250
+            addPebble("Pebble_0", {x,y,z}, 10000, 10000, 10000)
+          end
+        end
+        x=x+mx
+        y=y+my
+        z=z+mz
+
+        x=x+random(0,100)-50
+        y=y+random(0,100)-50
+        z=z+random(0,100)-50
+      end
+      if type==2 then --Nebulae
+        obj=random(1,3)
+        if obj==1 then
+          for iii = 0,1,1 do --300
+            x=x+random(0,500)-250
+            y=y+random(0,500)-250
+            z=z+random(0,500)-250
+	    addNebula("polySurface5", "MP_Bentusi_Radiation", {x,y,z}, {red,green,blue, 0.5}, 6000, 1000)
+          end
+        end
+        if obj==3 then
+          for iii = 0,1,1 do --300
+            x=x+random(0,500)-250
+            y=y+random(0,500)-250
+            z=z+random(0,500)-250
+	    addNebula("polySurface5", "MP_Bentusi_Radiation", {x,y,z}, {red,green,blue, 0.8}, 6000, 1750)
+          end
+          mx=random(0,3)-2
+          mx=mx*500
+          my=random(0,3)-2
+          my=my*500
+          mz=random(0,3)-2
+          mz=mz*500
+        end
+        if obj==2 then
+          addAsteroid("Asteroid_3", {x,y,z}, 100, 100, 100, 100, 100)
+          for iii = 0,1,1 do --300
+            x=x+random(0,500)-250
+            y=y+random(0,500)-250
+            z=z+random(0,500)-250
+	    addNebula("polySurface5", "Radiation", {x,y,z}, {red,green,blue, 0.2}, 6000, 2500)
+          end
+        end
+        x=x+mx
+        y=y+my
+        z=z+mz
+
+        x=x+random(0,100)-50
+        y=y+random(0,100)-50
+        z=z+random(0,100)-50
+      end
+      if type==4 then --Dust
+        obj=random(1,3)
+        if obj==1 then
+          for iii = 0,1,1 do --300
+            x=x+random(0,500)-250
+            y=y+random(0,500)-250 
+            z=z+random(0,500)-250
+	    addDustCloud("polySurface1", "DustCloud_NoRes", {x,y,z}, {Dred,Dgreen,Dblue, 0.5}, 0.0, 4000)
+          end
+        end
+        if obj==3 then
+          for iii = 0,1,1 do --300
+            x=x+random(0,500)-250
+            y=y+random(0,500)-250
+            z=z+random(0,500)-250
+	    addDustCloud("polySurface1", "DustCloud_NoRes", {x,y,z}, {Dred,Dgreen,Dblue, 0.5}, 0.0, 5000)
+          end
+          mx=random(0,3)-2
+          mx=mx*500
+          my=random(0,3)-2
+          my=my*500
+          mz=random(0,3)-2
+          mz=mz*500
+        end
+        if obj==2 then
+          addAsteroid("Asteroid_5", {x,y,z}, 100, 100, 100, 100, 100)
+          for iii = 0,2,1 do --300
+            x=x+random(0,500)-250
+            y=y+random(0,500)-250
+            z=z+random(0,500)-250
+	    addDustCloud("polySurface1", "DustCloud_NoRes", {x,y,z}, {Dred,Dgreen,Dblue, 0.8}, 0.0, 4000)
+          end
+        end
+        x=x+mx
+        y=y+my
+        z=z+mz
+
+        x=x+random(0,100)-50
+        y=y+random(0,100)-50
+        z=z+random(0,100)-50
+      end
+    end
+  end
+  setWorldBoundsInner({0, 0, 0}, {30000, 20000, 30000})
+end
+
+function NonDetermChunk()
+  fogSetActive(1)
+  setGlareIntensity(0.0)
+  fogSetColour(0, 0, 0, 1)
+  fogSetStart(10000)
+  fogSetEnd(50000)
+  fogSetType("linear")
+  fogSetDensity(1)
+
+  setLevelShadowColour(0, 0, 0, 0)
+  loadBackground("m03")
+  setSensorsManagerCameraDistances(8000, 45000)
+  setDefaultMusic("Data:sound/music/ambient/amb_07")
+end

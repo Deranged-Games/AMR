@@ -1,0 +1,447 @@
+aitrace("CPU: CLASSDEF LOADED")
+squadclass = {}
+
+-- is mothership
+squadclass[eMotherShip] = {
+	HGN_MOTHERSHIP,
+	
+	VGR_MOTHERSHIP,
+	VGR_MOTHERSHIP_MAKAAN,
+}
+
+-- can harvest
+squadclass[eCollector] = {
+	HGN_RESOURCECOLLECTOR,
+	
+	VGR_RESOURCECOLLECTOR,
+}
+
+-- is a good scout/explorer
+squadclass[eScout] = {
+	HGN_SCOUT,
+	HGN_PROBE,
+	HGN_PROXIMITYSENSOR,
+	HGN_ECMPROBE,
+	
+	VGR_SCOUT,
+	VGR_PROBE,
+	VGR_PROBE_PROX,
+	VGR_PROBE_ECM,
+}
+
+-- is a refinery
+squadclass[eRefinery] = {
+	HGN_RESOURCECONTROLLER,
+	
+	VGR_RESOURCECONTROLLER,
+}
+
+-- can build ships
+squadclass[eBuilder] = {
+	HGN_MOTHERSHIP,
+	HGN_LIGHTCARRIER,
+	HGN_CARRIER,
+	HGN_CARRIER_BISHOP,
+	HGN_SHIPYARD,
+		
+	VGR_MOTHERSHIP,
+	VGR_MOTHERSHIP_MAKAAN,
+	VGR_CARRIER,
+	VGR_CARRIER_OPS,
+	VGR_SHIPYARD,
+}
+
+-- can be used as a resource dropoff
+squadclass[eDropOff] = {
+	HGN_MOTHERSHIP,
+	HGN_CARRIER,
+	HGN_CARRIER_BISHOP,
+	HGN_SHIPYARD,
+	HGN_RESOURCECONTROLLER,
+	
+	VGR_MOTHERSHIP,
+	VGR_MOTHERSHIP_MAKAAN,
+	VGR_CARRIER,
+	VGR_CARRIER_OPS,
+	VGR_SHIPYARD,
+	VGR_RESOURCECONTROLLER,
+}
+
+-- can be used as a salvage dropoff
+squadclass[eSalvageDropOff] = {
+    HGN_MOTHERSHIP,
+	HGN_CARRIER,
+	HGN_CARRIER_BISHOP,
+	HGN_SHIPYARD,
+	VGR_MOTHERSHIP,
+	VGR_MOTHERSHIP_MAKAAN,
+	VGR_CARRIER,
+	VGR_CARRIER_OPS,
+	VGR_SHIPYARD,
+}
+
+-- is a fighter
+squadclass[eFighter] = {
+	HGN_INTERCEPTOR,
+	HGN_ATTACKBOMBER,
+	HGN_ATTACKBOMBERELITE,
+	HGN_HEAVYFIGHTER,
+	HGN_STRIKEFIGHTER,
+	HGN_BEAMFIGHTER,
+	HGN_HEAVYBOMBER,
+	
+	VGR_INTERCEPTOR,
+	VGR_BOMBER,
+	VGR_LANCEFIGHTER,
+	VGR_STRIKEFIGHTER,
+	VGR_HEAVYFIGHTER,
+	VGR_HEAVYBOMBER,
+}
+
+-- is a corvette
+squadclass[eCorvette] = {
+	HGN_ASSAULTCORVETTE,
+	HGN_PULSARCORVETTE,
+	HGN_MINELAYERCORVETTE,
+	HGN_MULTIGUNCORVETTE,
+	HGN_SIEGECORVETTE,
+	
+	VGR_MISSILECORVETTE,
+	VGR_LASERCORVETTE,
+	VGR_MINELAYERCORVETTE,
+	VGR_COMMANDCORVETTE,
+	VGR_MULTILANCECORVETTE,
+	VGR_TRINITYCORVETTE,
+}
+
+-- is a frigate
+squadclass[eFrigate] = {
+	HGN_ASSAULTFRIGATE,
+	HGN_DEFENSEFIELDFRIGATE,
+	HGN_IONCANNONFRIGATE,
+	HGN_MARINEFRIGATE,
+	HGN_MARINEFRIGATE_SOBAN,
+	HGN_TORPEDOFRIGATE,
+	HGN_TORPEDOFRIGATEELITE,
+	HGN_GUNFRIGATE,
+	HGN_PULSARFRIGATE,
+	HGN_MISSILEFRIGATE,
+	HGN_PLASMAFRIGATE,
+	
+	VGR_ASSAULTFRIGATE,
+	VGR_HEAVYMISSILEFRIGATE,
+	VGR_INFILTRATORFRIGATE,
+	VGR_GUNFRIGATE,
+	VGR_LANCEFRIGATE,
+	VGR_EMPFRIGATE,
+	VGR_CRUSADERFRIGATE,
+	VGR_ARTILLERYFRIGATE,
+	VGR_WARFRIGATE,
+	VGR_WARFRIGATE2,
+}
+
+-- can capture other ships
+squadclass[eCapture] = {
+	HGN_MARINEFRIGATE,
+	HGN_MARINEFRIGATE_SOBAN,
+	VGR_INFILTRATORFRIGATE,
+}
+
+-- has shields
+squadclass[eShield] = {
+	HGN_DEFENSEFIELDFRIGATE,
+	VGR_EMPFRIGATE,
+}
+
+-- is a platform
+squadclass[ePlatform] = {
+	HGN_GUNTURRET,
+	HGN_PULSARTURRET,
+	HGN_IONTURRET,
+	
+	VGR_WEAPONPLATFORM_GUN,
+	VGR_WEAPONPLATFORM_LANCE,
+	VGR_WEAPONPLATFORM_MISSILE,
+	VGR_HYPERSPACE_PLATFORM,
+}
+
+-- good at attacking fighters
+squadclass[eAntiFighter] = {
+	HGN_INTERCEPTOR,
+	HGN_HEAVYFIGHTER,
+	HGN_STRIKEFIGHTER,
+	HGN_MULTIGUNCORVETTE,
+	HGN_ASSAULTCORVETTE,
+	HGN_ASSAULTFRIGATE,
+	HGN_BATTLESHIP,
+	HGN_GUNTURRET,
+	
+	VGR_INTERCEPTOR,
+	VGR_STRIKEFIGHTER,
+	VGR_HEAVYFIGHTER,
+	VGR_MISSILECORVETTE,
+	VGR_ASSAULTFRIGATE,
+	VGR_BATTLESHIP,
+	VGR_LIGHTCRUISER,
+	VGR_WEAPONPLATFORM_GUN,
+}
+
+-- good at killing corvettes
+squadclass[eAntiCorvette] = {
+	HGN_BEAMFIGHTER,
+	HGN_PULSARCORVETTE,
+	HGN_PULSARFRIGATE,
+	HGN_BATTLESHIP,
+	HGN_PULSARTURRET,
+	
+	VGR_LANCEFIGHTER,
+	VGR_MULTILANCECORVETTE,
+	VGR_LANCEFRIGATE,
+	VGR_BATTLESHIP,
+	VGR_LIGHTCRUISER,
+	VGR_WEAPONPLATFORM_LANCE,
+}
+
+-- good at killing frigates
+squadclass[eAntiFrigate] = {
+	HGN_IONTURRET,
+	HGN_ATTACKBOMBER,
+	HGN_ATTACKBOMBERELITE,
+	HGN_HEAVYBOMBER,
+	HGN_SIEGECORVETTE,
+	HGN_GUNFRIGATE,
+	HGN_TORPEDOFRIGATE,
+	HGN_TORPEDOFRIGATEELITE,
+	HGN_IONCANNONFRIGATE,
+	HGN_MISSILEFRIGATE,
+	HGN_PLASMAFRIGATE,
+	HGN_DESTROYER,
+	HGN_LRDESTROYER,
+	HGN_LIGHTCRUISER,
+	HGN_CRUISER,
+	HGN_BATTLECRUISER,
+	
+	VGR_WEAPONPLATFORM_MISSILE,
+	VGR_BOMBER,
+	VGR_HEAVYBOMBER,
+	VGR_LASERCORVETTE,
+	VGR_TRINITYCORVETTE,
+	VGR_GUNFRIGATE,
+	VGR_HEAVYMISSILEFRIGATE,
+	VGR_ARTILLERYFRIGATE,
+	VGR_WARFRIGATE,
+	VGR_WARFRIGATE2,
+	VGR_CRUSADERFRIGATE,
+	VGR_DESTROYER,
+	VGR_HEAVYDESTROYER,
+	VGR_CRUISER,
+	VGR_BATTLECRUISER,
+	VGR_ALKHALID,
+	VGR_CARRIER_OPS,
+
+	HGN_MARINEFRIGATE,
+	HGN_MARINEFRIGATE_SOBAN,
+	HGN_DEFENSEFIELDFRIGATE,
+	VGR_INFILTRATORFRIGATE,
+	VGR_EMPFRIGATE,
+}
+
+-- is a capital ship
+squadclass[eCapital] = {
+	HGN_LIGHTCARRIER,
+	HGN_CARRIER,
+	HGN_CARRIER_BISHOP,
+	HGN_MOTHERSHIP,
+	HGN_SHIPYARD,
+	HGN_BATTLESHIP,
+	HGN_DESTROYER,
+	HGN_LRDESTROYER,
+	HGN_LIGHTCRUISER,
+	HGN_CRUISER,
+	HGN_BATTLECRUISER,
+	HGN_DREADNAUGHT,
+	
+	VGR_CARRIER,
+	VGR_CARRIER_OPS,
+	VGR_MOTHERSHIP,
+	VGR_MOTHERSHIP_MAKAAN,
+	VGR_SHIPYARD,
+	VGR_DESTROYER,
+	VGR_BATTLESHIP,
+	VGR_HEAVYDESTROYER,
+	VGR_LIGHTCRUISER,
+	VGR_CRUISER,
+	VGR_BATTLECRUISER,
+	VGR_ALKHALID,
+}
+
+-- eCollector + eScout (maybe refineries - but those things are pretty tough?)
+-- this is currently only used to count the number of 'military units' the player/enemy has
+squadclass[eNonThreat] = {
+	HGN_RESOURCECOLLECTOR,
+	VGR_RESOURCECOLLECTOR,
+	HGN_RESOURCECONTROLLER,
+	VGR_RESOURCECONTROLLER,
+	
+	HGN_LIGHTCARRIER,
+	HGN_CARRIER,
+	HGN_MOTHERSHIP,
+	HGN_SHIPYARD,
+	VGR_CARRIER,
+	VGR_MOTHERSHIP,
+	VGR_MOTHERSHIP_MAKAAN,
+	VGR_SHIPYARD,
+	
+	HGN_SCOUT,
+	HGN_PROBE,
+	HGN_PROXIMITYSENSOR,
+	HGN_ECMPROBE,
+		
+	VGR_SCOUT,
+	VGR_PROBE,
+	VGR_PROBE_PROX,
+	VGR_PROBE_ECM,
+	
+	VGR_HYPERSPACE_PLATFORM,
+}
+
+-- is a hyperspace gate
+squadclass[eHyperspaceGate] = 
+{
+	VGR_HYPERSPACE_PLATFORM,
+}
+
+-- good at killing subsystems
+squadclass[eSubSystemAttackers] = 
+{
+	HGN_ATTACKBOMBER,
+	HGN_ATTACKBOMBERELITE,
+	HGN_HEAVYBOMBER,
+
+	VGR_HEAVYBOMBER,
+	VGR_BOMBER,
+}
+
+-- non critical subsystems
+squadclass[eNonCriticalSubSys] = 
+{
+	CLOAKGENERATOR,
+	FIRECONTROLTOWER,
+	HYPERSPACEINHIBITOR,
+	ADVANCEDARRAY,
+	CLOAKSENSOR,
+	SIDETURRET,
+	VENTRALTURRET,
+	DEFENSEFIELDSHIELDMODULE,
+}
+
+-- good at killing repairing collectors
+squadclass[eGoodRepairAttackers] = 
+{
+	HGN_STRIKEFIGHTER,
+	HGN_BEAMFIGHTER,
+	HGN_PULSARCORVETTE,
+	HGN_SIEGECORVETTE,
+	HGN_IONCANNONFRIGATE,
+	HGN_PULSARFRIGATE,
+	HGN_GUNFRIGATE,
+	HGN_PLASMAFRIGATE,
+	
+	VGR_LANCEFIGHTER,
+	VGR_STRIKEFIGHTER,
+	VGR_MULTILANCECORVETTE,
+	VGR_TRINITYCORVETTE,
+	VGR_CRUSADERFRIGATE,
+	VGR_LANCEFRIGATE,
+	VGR_GUNFRIGATE,
+	VGR_WARFRIGATE,
+	VGR_WARFRIGATE2,
+}
+
+-------------------------------------------
+-- CUSTOM classes
+
+-- do not exceed eMaxUserCount(32)
+
+eUselessShips = eMaxCount
+eBattleCruiser = eMaxCount + 1
+eCruiser = eMaxCount + 1
+-- this number should be one greater then the highest class
+sg_maxClasses = eCruiser+1
+
+-- ships that the AI should not build because they are not used properly
+squadclass[ eUselessShips ] = 
+{
+	HGN_MINELAYERCORVETTE,
+	HGN_SUPPORTFRIGATE,
+	
+	VGR_MINELAYERCORVETTE,
+	VGR_COMMANDCORVETTE,
+}
+
+-- is a battlecruiser, meaning needs a shipyard to build.
+squadclass[eBattleCruiser] = 
+{
+	HGN_BATTLECRUISER,
+
+	VGR_BATTLECRUISER,
+	VGR_ALKHALID,
+}
+
+-- is a non-battlecruiser combat capship
+squadclass[eCruiser] = 
+{
+	HGN_DESTROYER,
+	HGN_BATTLESHIP,
+	HGN_LRDESTROYER,
+	HGN_LIGHTCRUISER,
+	HGN_CRUISER,
+	
+	VGR_DESTROYER,
+	VGR_BATTLESHIP,
+	VGR_HEAVYDESTROYER,
+	VGR_LIGHTCRUISER,
+	VGR_CRUISER,
+}
+
+--
+-- FUNCTIONS TO ADD SQUADRON TYPES TO CLASS SYSTEM
+--
+
+function FastAddToClass( tbl, classid )
+	for a,b in tbl do
+		AddToClass( b, classid )
+	end
+end
+
+function ClassInitialize()
+
+	for i=0, sg_maxClasses do
+		if (squadclass[i]) then
+			FastAddToClass( squadclass[i], i )
+		end
+	end
+	
+	-- debug: name all the classes to be displayed on screen
+	AddClassName( eMotherShip, "Motherships")
+	AddClassName( eCollector, "Collectors")
+	AddClassName( eDropOff, "DropOffs")
+	AddClassName( eFighter, "Fighters")
+	AddClassName( eFrigate, "Frigates")
+	AddClassName( eCorvette, "Corvettes")
+	AddClassName( eCapital, "Capital")
+	AddClassName( eAntiFighter, "AntiFighter")
+	AddClassName( eAntiCorvette, "AntiCorvette")
+	AddClassName( eAntiFrigate, "AntiFrigate")
+	AddClassName( ePlatform, "Platform")
+	AddClassName( eRefinery, "Refinery")
+	AddClassName( eHyperspaceGate, "HypGates")
+	AddClassName( eShield, "Shields")
+	AddClassName( eCapture, "Capture")
+	AddClassName( eSubSystemAttackers, "SubSysKillas")
+	AddClassName( eBattleCruiser, "BattleCruiser")
+	AddClassName( eCruiser, "Cruiser")
+	
+	
+end
+

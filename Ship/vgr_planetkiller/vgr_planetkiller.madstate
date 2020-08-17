@@ -1,0 +1,4 @@
+VGR_PLANETKILLER_NIS00_OnSet = function(ship)
+	startAnim(ship, "Open")
+	setPauseTime(ship, "Open", 1000)
+end

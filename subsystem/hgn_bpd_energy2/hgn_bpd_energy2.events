@@ -1,0 +1,69 @@
+effects = {
+  animations = {
+    animation1 = {
+      name = "Weapon_Top",
+      length = 1,
+      loop = 0,
+      parent = "",
+      minimum = 0,
+      maximum = 0,
+      markers = {
+        "",
+      },
+    },
+  },
+  events = {
+    event1 = {
+      {
+        "anim",
+        "Weapon_Top",
+      },
+      {
+        "animtime",
+        "0",
+      },
+      {
+        "marker",
+        "Weapon_RapidPulsar_Muzzle",
+      },
+      {
+        "fx",
+        "lance_charged_particle",
+      },
+      {
+        "sound",
+        "WEAPON/CORVETTE/FIRE/WEAPON_CORVETTE_VULCAN_KINETIC_TURRET_SHELL",
+      },
+      {
+        "fx_nlips",
+        "on",
+      },
+    },
+    event2 = {
+      {
+        "anim",
+        "Weapon_Top",
+      },
+      {
+        "animtime",
+        "0.5",
+      },
+      {
+        "marker",
+        "Weapon_RapidPulsarSlave_Muzzle",
+      },
+      {
+        "fx",
+        "lance_charged_particle",
+      },
+      {
+        "sound",
+        "WEAPON/CORVETTE/FIRE/WEAPON_CORVETTE_VULCAN_KINETIC_TURRET_SHELL",
+      },
+      {
+        "fx_nlips",
+        "on",
+      },
+    },
+  },
+}

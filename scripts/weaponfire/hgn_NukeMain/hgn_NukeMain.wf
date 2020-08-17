@@ -1,0 +1,10 @@
+hitfx = "dmg_missle_explode_combo"
+bulletfx = "bullet_generic"
+nopenetratefx = "dmg_missle_explode_combo"
+deathtype = "deathCannon"
+hit_sfx = "Explosion/Small/ETG_Explode_Small_Plasma"
+nopenetrate_sfx = "Explosion/Small/ETG_Explode_Small_Plasma"
+hit_clamp = {
+  1,
+  1,
+}

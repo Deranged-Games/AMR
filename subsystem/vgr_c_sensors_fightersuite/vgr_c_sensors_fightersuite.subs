@@ -1,0 +1,41 @@
+NewSubSystemType = StartSubSystemConfig()
+NewSubSystemType.displayedName = "Anti-Strike Craft Defense Suite"
+NewSubSystemType.sobDescription = "Carrier Defensive Combat Module"
+NewSubSystemType.tacticalIcon = "hexagon"
+NewSubSystemType.tacticalIconMinSize = 0.0035
+NewSubSystemType.tacticalIconMinFadeSize = 0.0045
+NewSubSystemType.tacticalIconMaxFadeSize = 0.008
+NewSubSystemType.groupMergeSize = 0.001
+NewSubSystemType.mouseOverMinFadeSize = 0.045
+NewSubSystemType.mouseOverMaxFadeSize = 0.1
+NewSubSystemType.maxhealth = 10000
+NewSubSystemType.regentime = 250
+NewSubSystemType.nlips = 0
+NewSubSystemType.nlipsRange = 0
+NewSubSystemType.nlipsFar = 0
+NewSubSystemType.nlipsFarRange = 0
+NewSubSystemType.meshRenderLimit = 0.004
+NewSubSystemType.minimumZoomFactor = 0.68
+NewSubSystemType.selectionLimit = 5000
+NewSubSystemType.preciseATILimit = 5000
+NewSubSystemType.selectionPriority = 37.5
+NewSubSystemType.type = "Weapon"
+NewSubSystemType.typeString = "DefenseSuite"
+NewSubSystemType.collateralDamage = 100
+NewSubSystemType.inactiveTimeAfterDamage = 10
+NewSubSystemType.activateHealthPercentage = 0.1
+NewSubSystemType.costToBuild = 450
+NewSubSystemType.timeToBuild = 45
+NewSubSystemType.isResearch = 0
+NewSubSystemType.visible = 1
+LoadHODFile(NewSubSystemType, 1)
+NewSubSystemType.BuildFamily = "SubSystem_Vgr"
+NewSubSystemType.AttackFamily = "SubSystem"
+NewSubSystemType.DockFamily = "CantDock"
+NewSubSystemType.DisplayFamily = "SubSystemSensors"
+NewSubSystemType.ArmourFamily = "SubSystemArmour"
+StartSubSystemWeaponConfig(NewSubSystemType,"vgr_carrier_clustermissile","Weapon_Missile","Fire_Missle")
+StartSubSystemWeaponConfig(NewSubSystemType,"vgr_destroyer_rapid","Weapon_Turret","")
+StartSubSystemWeaponConfig(NewSubSystemType,"vgr_hd_missile","Weapon_ConMissile1","Fire_ConMissile1")
+StartSubSystemWeaponConfig(NewSubSystemType,"vgr_hd_missile","Weapon_ConMissile2","Fire_ConMissile2")
+

@@ -1,0 +1,4 @@
+function Hgn_NukeMain_Open_OnSet(ship)
+	startAnim(ship, "Open")
+	setPauseTime(ship, "Open", 1000)
+end

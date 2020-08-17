@@ -1,0 +1,90 @@
+maxPlayers = 1;
+
+player = {};
+  player[0] = {id = 0, name = "187TH", resources = 10000, raceID = 1, startPos = 0}
+
+function DetermChunk()
+  setWorldBoundsInner({0, 0, 0}, {54250, 15000, 54250})
+end
+
+function NonDetermChunk()
+  --This is something I threw togethor so that I can make controlled, but generated pebble veins without manually doing it each time.
+  --I also tend to use this for the general pebble production aswell.
+  veins = 1			--Make sure this number is the same as the length as each below arrays, or bad evil things.
+  veinStartX = {	0}	--X coord of Vein Start
+  veinStartY = {	0}	--Y coord of Vein Start
+  veinStartZ = {	0}	--Z coord of Vein Start
+  veinDirectionX = {	0}	--X direction of Vein parts
+  veinDirectionY = {	0}	--Y direction of Vein parts
+  veinDirectionZ = {	0}	--Z direction of Vein parts
+  veinLength = {	1}	--How many generated parts the vein consists of
+  veinParts = {		250}	--Amount of particles in every 2k or so of a vein.
+  veinDecay = {		0}	--Percentage of particles lost a step, can be negative.
+  veinWidth = {		500}	--Diameter of vein, *100
+  veinSpread = {	0}	--Percentage the vein spreads the vein suffers as it goes, can be negative.
+
+  for i = 1, veins do
+    X = veinStartX[i]
+    Y = veinStartY[i]
+    Z = veinStartZ[i]
+    MvecX = veinDirectionX[i]
+    MvecY = veinDirectionY[i]
+    MvecZ = veinDirectionZ[i]
+    Portions = veinLength[i]
+    Parts = veinParts[i]
+    decay = veinDecay[i]
+    dispersion = veinWidth[i]
+    spread = veinSpread[i]
+
+    Length = sqrt((MvecX * MvecX) + (MvecY * MvecY) + (MvecZ * MvecZ))
+    if(Length > 500) then
+      Ratio = 2000 / Length
+      Parts = Parts*Ratio
+    end
+    for j = 1, Portions do
+      if(decay >= 0) then
+        randomDecay = ((random(0,decay)-(decay/2))/2)
+      else
+        tempdecay = decay * -1
+        randomDecay = ((random(0,tempdecay)-(tempdecay/2))/2)
+      end
+      Parts = Parts * ((100 - (decay + randomDecay))/100)
+
+      if(spread >= 0) then
+        randomSpread = ((random(0,spread)-(spread/2))/2)
+      else
+        tempspread = spread * -1
+        randomSpread = ((random(0,tempspread)-(tempspread/2))/2)
+      end
+      dispersion = dispersion*((100 + (spread+randomSpread))/100)
+
+      for k = 1, floor(Parts) do
+        Section = random(0,20)/20
+        BX = MvecX*Section + X + (random(0,200)-100)*dispersion
+        BY = MvecY*Section + Y + (random(0,200)-100)*dispersion
+        BZ = MvecZ*Section + Z + (random(0,200)-100)*dispersion
+        addPebble("Pebble_0", {BX,BY,BZ}, 0, 0, 0)
+      end
+
+      X = X + MvecX
+      Y = Y + MvecY
+      Z = Z + MvecZ
+      MvecX = MvecX + ((random(0,20)-10) * 25)
+      MvecY = MvecY + ((random(0,20)-10) * 25)
+      MvecZ = MvecZ + ((random(0,20)-10) * 25)
+    end
+  end
+
+  fogSetActive(1)
+  fogSetStart(10)
+  fogSetEnd(20000)
+  fogSetColour(0.427734, 0.228516, 0.078125, 1)
+  fogSetType("linear")
+  fogSetDensity(0.075)
+
+  setGlareIntensity(0)
+  setLevelShadowColour(0, 0, 0, 1)
+  loadBackground("m02")
+  setSensorsManagerCameraDistances(12000, 60000)
+  setDustCloudAmbient({0.5, 0.5, 0.5, 1})
+end

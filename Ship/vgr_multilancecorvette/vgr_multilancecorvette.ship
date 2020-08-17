@@ -1,0 +1,162 @@
+NewShipType = StartShipConfig()
+NewShipType.displayedName = "MultiLance Corvette"
+NewShipType.sobDescription = "Corvette Class: Anti-Corvette"
+NewShipType.maxhealth = 1000
+NewShipType.regentime = 0
+NewShipType.minRegenTime = 0
+NewShipType.sideArmourDamage = 1
+NewShipType.rearArmourDamage = 1
+NewShipType.isTransferable = 1
+NewShipType.useEngagementRanges = 0
+NewShipType.unitCapsNumber = 2
+NewShipType.SquadronSize = 4
+NewShipType.formationSpacing = 80
+NewShipType.passiveFormation = "broad"
+NewShipType.defensiveFormation = "2x2_wall"
+NewShipType.aggressiveFormation = "charging_wall"
+NewShipType.mass = 15
+NewShipType.collisionMultiplier = 1
+NewShipType.thrusterMaxSpeed = 290
+NewShipType.mainEngineMaxSpeed = 290
+NewShipType.rotationMaxSpeed = 100
+NewShipType.thrusterAccelTime = 4
+NewShipType.thrusterBrakeTime = 2.5
+NewShipType.mainEngineAccelTime = 4
+NewShipType.mainEngineBrakeTime = 2.5
+NewShipType.rotationAccelTime = 2
+NewShipType.rotationBrakeTime = 1.5
+NewShipType.thrusterUsage = 0.5
+NewShipType.accelerationAngle = 170
+NewShipType.mirrorAngle = 30
+NewShipType.secondaryTurnAngle = 0
+NewShipType.maxBankingAmount = 180
+NewShipType.descendPitch = 90
+NewShipType.goalReachEpsilon = 5
+NewShipType.slideMoveRange = 0
+NewShipType.controllerType = "Ship"
+NewShipType.tumbleStaticX = 10
+NewShipType.tumbleStaticY = 20
+NewShipType.tumbleStaticZ = 5
+NewShipType.tumbleDynamicX = 2
+NewShipType.tumbleDynamicY = 10
+NewShipType.tumbleDynamicZ = 5
+NewShipType.tumbleSpecialDynamicX = 2
+NewShipType.tumbleSpecialDynamicY = 10
+NewShipType.tumbleSpecialDynamicZ = 5
+NewShipType.relativeMoveFactor = 3
+NewShipType.swayUpdateTime = 2
+NewShipType.swayOffsetRandomX = 10
+NewShipType.swayOffsetRandomY = 10
+NewShipType.swayOffsetRandomZ = 10
+NewShipType.swayBobbingFactor = 0.015
+NewShipType.swayRotateFactor = 0
+NewShipType.dustCloudDamageTime = 160
+NewShipType.nebulaDamageTime = 35
+NewShipType.MinimalFamilyToFindPathAround = "SuperCap"
+NewShipType.mirrorAboveManeuver = "ImmelMann"
+NewShipType.mirrorBelowManeuver = "Split_S"
+NewShipType.BuildFamily = "Corvette_Vgr"
+NewShipType.AttackFamily = "Corvette"
+NewShipType.DockFamily = "Corvette"
+NewShipType.AvoidanceFamily = "Strikecraft"
+NewShipType.DisplayFamily = "Corvette"
+NewShipType.AutoFormationFamily = "Corvette"
+NewShipType.CollisionFamily = "Small"
+NewShipType.ArmourFamily = "LightArmour"
+NewShipType.UnitCapsFamily = "Corvette"
+NewShipType.fighterValue = 0
+NewShipType.corvetteValue = 16
+NewShipType.frigateValue = 0
+NewShipType.neutralValue = 0
+NewShipType.antiFighterValue = 0
+NewShipType.antiCorvetteValue = 16
+NewShipType.antiFrigateValue = 0
+NewShipType.totalValue = 16
+NewShipType.buildCost = 520
+NewShipType.buildTime = 50
+NewShipType.buildPriorityOrder = 10
+NewShipType.retaliationRange = 5500
+NewShipType.retaliationDistanceFromGoal = 160
+NewShipType.visualRange = 1000
+NewShipType.prmSensorRange = 5000
+NewShipType.secSensorRange = 6000
+NewShipType.detectionStrength = 1
+NewShipType.TOIcon = "Square"
+NewShipType.TOScale = 1
+NewShipType.TODistanceFade0 = 7000
+NewShipType.TODistanceDisappear0 = 5000
+NewShipType.TODistanceFade1 = 2500
+NewShipType.TODistanceDisappear1 = 2000
+NewShipType.TODistanceFade2 = 12000
+NewShipType.TODistanceDisappear2 = 35000
+NewShipType.TOGroupScale = 1
+NewShipType.TOGroupMergeSize = 0
+NewShipType.mouseOverMinFadeSize = 0.045
+NewShipType.mouseOverMaxFadeSize = 0.1
+NewShipType.healthBarStyle = 0
+NewShipType.nlips = 0
+NewShipType.nlipsRange = 75000
+NewShipType.nlipsFar = 0
+NewShipType.nlipsFarRange = 0
+NewShipType.SMRepresentation = "HardDot"
+NewShipType.meshRenderLimit = 10400
+NewShipType.dotRenderLimit = 10
+NewShipType.visibleInSecondary = 1
+NewShipType.minLOD = 0.3
+NewShipType.goblinsStartFade = 400
+NewShipType.goblinsOff = 400
+NewShipType.upLOD = 800
+NewShipType.upLOD = 1300
+NewShipType.upLOD = 2500
+NewShipType.downLOD = 815
+NewShipType.downLOD = 1315
+NewShipType.downLOD = 2515
+NewShipType.minimumZoomFactor = 0.74
+NewShipType.selectionLimit = 150000
+NewShipType.preciseATILimit = 0
+NewShipType.selectionPriority = 75
+NewShipType.militaryUnit = 0
+addAbility(NewShipType,"MoveCommand",1,0)
+addAbility(NewShipType,"CanDock",1,1)
+NewShipType.dockTimeBetweenTwoFormations = 0.5
+NewShipType.dockTimeBeforeStart = 0.5
+NewShipType.dockNrOfShipsInDockFormation = 1
+NewShipType.dockFormation = "n_delta"
+NewShipType.queueFormation = "dockline"
+NewShipType.dontDockWithOtherRaceShips = 0
+NewShipType.ignoreRaceWhenDocking = 0
+addAbility(NewShipType,"CanLaunch")
+NewShipType.launchTimeBetweenTwoFormations = 0.5
+NewShipType.launchTimeBeforeStart = 0.5
+NewShipType.launchNrOfShipsInDockFormation = 1
+NewShipType.launchFormation = "dockline"
+addAbility(NewShipType,"ParadeCommand",1)
+addAbility(NewShipType,"WaypointMove")
+addAbility(NewShipType,"GuardCommand",1,3000,500)
+addAbility(NewShipType,"HyperspaceViaGateCommand",1,3,1,0.3)
+addAbility(NewShipType,"RetireAbility",1,0)
+addAbility(NewShipType,"CanAttack",1,1,1,0,0.35,1,"Capturer, Frigate, SmallCapitalShip, BigCapitalShip, Utility, Fighter, Corvette","FlyBy_Corvette_vs_Corvette",{
+  Fighter = "FlyBy_Corvette_vs_Corvette",
+},{
+  Mothership = "flyby_VCorvette_vs_Mothership",
+},{
+  SmallCapitalShip = "FlyBy_VCorvette_vs_CapShip",
+},{
+  BigCapitalShip = "FlyBy_VCorvette_vs_CapShip",
+},{
+  SubSystem = "FrontalVsSubSystem_Corvette",
+},{
+  Corvette = "FlyBy_Corvette_vs_Corvette",
+})
+LoadModel(NewShipType,1)
+addShield(NewShipType,"EMP",75,20)
+StartShipWeaponConfig(NewShipType,"vgr_corvette_lance","Weapon_LanceTurret","Fire_L")
+StartShipWeaponConfig(NewShipType,"vgr_corvette_lance","Weapon_LanceTurret1","Fire_L")
+NewShipType.sobDieTime = 1
+NewShipType.sobSpecialDieTime = 1
+NewShipType.specialDeathSpeed = 40
+NewShipType.chanceOfSpecialDeath = 0
+NewShipType.deadSobFadeTime = 1
+setEngineTrail(NewShipType,0,4,"trail_ribbon.tga",0.05,0.1,0.025,3)
+setEngineBurn(NewShipType,12,0.5,1,12,0,0.7,0.1,35)
+loadShipPatchList(NewShipType,"data:sound/sfx/ship/Vaygr/Corvette/",0,"Engines/VCorvetteEng","",1,"Ambience/VCasteGunshipAmb","")

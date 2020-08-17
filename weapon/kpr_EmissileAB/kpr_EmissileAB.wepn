@@ -1,0 +1,15 @@
+StartWeaponConfig(NewWeaponType,"Fixed","SphereBurst","EMP","Normal",0,0,90,1,0,0,10,0,0,0,0,0,0,0,0,0,0.1,"Normal",1,0,0)
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",100,125,"")
+setPenetration(NewWeaponType,5,1,{
+  lightarmour = 0.8,
+},{
+  mediumarmour = 0.4,
+},{
+  heavyarmour = 0,
+},{
+  MoverArmour = 0.25,
+},{
+  MineArmour = 0,
+},{
+  PlanetKillerArmour = 0,
+})

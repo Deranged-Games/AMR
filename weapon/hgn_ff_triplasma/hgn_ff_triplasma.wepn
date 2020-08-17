@@ -1,0 +1,23 @@
+StartWeaponConfig(NewWeaponType,"Gimble","Bullet","Dread_BombNE","Normal",1600,5000,0,0,0,0,1,0,1,16,0,0,0,0,260,40,0.1,"Normal",0,0,0)
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",2000,3000,"")
+setPenetration(NewWeaponType,10,1,{ 
+  ResArmour = 0.2, 
+},{ 
+  PlanetKillerArmour = 0, 
+},{ 
+  SubSystemArmour = 2, 
+},{ 
+  TurretArmour = 0.45, })
+setAccuracy(NewWeaponType,1,{ 
+  Fighter = 0, 
+},{ 
+  Corvette = 0, 
+},{ 
+  munition = 0, 
+},{ 
+  Frigate = 0.8,
+},{ 
+  ResourceLarge = 0.6,
+})
+setAngles(NewWeaponType,30,0,0,0,0)
+setMiscValues(NewWeaponType,4,1)

@@ -1,0 +1,121 @@
+effects = {
+  animations = {
+    animation1 = {
+      name = "Weapon_TurretTop",
+      length = 1,
+      loop = 0,
+      parent = "",
+      minimum = 0,
+      maximum = 0,
+      markers = {
+        "",
+      },
+    },
+    animation2 = {
+      name = "Damage",
+      length = 1,
+      loop = 1,
+      parent = "",
+      minimum = 0,
+      maximum = 0,
+      markers = {
+        "",
+      },
+    },
+    animation3 = {
+      name = "Dmg1",
+      length = 1,
+      loop = 1,
+      parent = "damage",
+      minimum = 0.9,
+      maximum = 1,
+      markers = {
+        "",
+      },
+    },
+  },
+  events = {
+    event1 = {
+      {
+        "anim",
+        "Dmg1",
+      },
+      {
+        "animtime",
+        "-1",
+      },
+      {
+        "marker",
+        "Root",
+      },
+      {
+        "fx",
+        "dmg_damage_subsystem_spray",
+      },
+      {
+        "fx_scale",
+        "entity",
+      },
+    },
+    event2 = {
+      {
+        "anim",
+        "Weapon_TurretTop",
+      },
+      {
+        "animtime",
+        "0",
+      },
+      {
+        "marker",
+        "weapon_Top_Muzzle",
+      },
+      {
+        "fx",
+        "torpedo_steam_spray_inherit",
+      },
+      {
+        "sound",
+        "WEAPON/CORVETTE/FIRE/WEAPON_VCORVETTE_TORPEDO_LAUNCH",
+      },
+      {
+        "fx_scale",
+        "0.5",
+      },
+      {
+        "fx_nlips",
+        "on",
+      },
+    },
+    event3 = {
+      {
+        "anim",
+        "Weapon_TurretTop",
+      },
+      {
+        "animtime",
+        "0.9",
+      },
+      {
+        "marker",
+        "Weapon_TopSlave_Muzzle",
+      },
+      {
+        "fx",
+        "torpedo_steam_spray_inherit",
+      },
+      {
+        "sound",
+        "WEAPON/CORVETTE/FIRE/WEAPON_VCORVETTE_TORPEDO_LAUNCH",
+      },
+      {
+        "fx_scale",
+        "0.5",
+      },
+      {
+        "fx_nlips",
+        "on",
+      },
+    },
+  },
+}

@@ -1,0 +1,572 @@
+paradeSlot("Vgr_Bomber",{
+  -1325,
+  -50,
+  1868,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},400)
+paradeSlot("Vgr_HeavyBomber",{
+  -1325,
+  100,
+  1868,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},400)
+paradeSlot("Vgr_CommandCorvette",{
+  -1836,
+  170,
+  178,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_StrikeFighter",{
+  -859,
+  -43,
+  2622,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_HeavyFighter",{
+  -859,
+  -143,
+  2622,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_Defender",{
+  -859,
+  -243,
+  2622,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_Scout",{
+  -1065,
+  -195,
+  2265,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_Interceptor",{
+  -1065,
+  -95,
+  2265,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},400)
+paradeSlot("Vgr_MultiroleFighter",{
+  -1065,
+  50,
+  2265,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},400)
+paradeSlot("Vgr_LanceFighter",{
+  -1538,
+  0,
+  1480,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},400)
+paradeSlot("Vgr_LaserCorvette",{
+  -1360,
+  0,
+  989,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_TrinityCorvette",{
+  -1360,
+  150,
+  989,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_MinelayerCorvette",{
+  -2125,
+  305,
+  -292,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_MissileCorvette",{
+  -1572,
+  87,
+  578,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_MultiLanceCorvette",{
+  -1572,
+  237,
+  578,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_Probe",{
+  -737,
+  0,
+  -3097,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_Probe_ECM",{
+  -981,
+  0,
+  -2674,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_Probe_Prox",{
+  -580,
+  0,
+  -3518,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_ResourceCollector",{
+  -1768,
+  350,
+  -1397,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_ResourceController",{
+  -1507,
+  267,
+  -1801,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_HyperSpace_Platform",{
+  -1162,
+  183,
+  -2233,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_AssaultFrigate",{
+  759,
+  -148,
+  2518,
+},{
+  0,
+  0,
+  1,
+},{
+  1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_GunFrigate",{
+  759,
+  50,
+  2518,
+},{
+  0,
+  0,
+  1,
+},{
+  1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_LightCruiser",{
+  1000,
+  1500,
+  1400,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},750)
+paradeSlot("Vgr_Alkhalid",{
+  0,
+  1600,
+  -1800,
+},{
+  0,
+  0,
+  1,
+},{
+  0,
+  1,
+  0,
+},750)
+paradeSlot("Vgr_BattleCruiser",{
+  1200,
+  1400,
+  -1200,
+},{
+  0,
+  0,
+  1,
+},{
+  1,
+  0,
+  0,
+},750)
+paradeSlot("Vgr_Cruiser",{
+  -1200,
+  1400,
+  -1200,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},750)
+paradeSlot("Vgr_HeavyDestroyer",{
+  2129,
+  500,
+  -568,
+},{
+  0,
+  0,
+  1,
+},{
+  1,
+  0,
+  0,
+},400)
+paradeSlot("Vgr_Destroyer",{
+  2129,
+  125,
+  -568,
+},{
+  0,
+  0,
+  1,
+},{
+  1,
+  0,
+  0,
+},400)
+paradeSlot("Vgr_BattleShip",{
+  2129,
+  -250,
+  -568,
+},{
+  0,
+  0,
+  1,
+},{
+  1,
+  0,
+  0,
+},400)
+paradeSlot("Vgr_HeavyMissileFrigate",{
+  1136,
+  -74,
+  1869,
+},{
+  0,
+  0,
+  1,
+},{
+  1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_WarFrigate",{
+  1136,
+  126,
+  1869,
+},{
+  0,
+  0,
+  1,
+},{
+  1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_WarFrigate2",{
+  1136,
+  326,
+  1869,
+},{
+  0,
+  0,
+  1,
+},{
+  1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_InfiltratorFrigate",{
+  1532,
+  -5,
+  1184,
+},{
+  0,
+  0,
+  1,
+},{
+  1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_EMPFrigate",{
+  1532,
+  200,
+  1184,
+},{
+  0,
+  0,
+  1,
+},{
+  1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_ShipYard",{
+  -4500,
+  -250,
+  -4500,
+},{
+  0,
+  0,
+  1,
+},{
+  1,
+  0,
+  0,
+},2000)
+paradeSlot("Vgr_LanceFrigate",{
+  1862,
+  -50,
+  434,
+},{
+  0,
+  0,
+  1,
+},{
+  1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_CrusaderFrigate",{
+  1862,
+  161,
+  434,
+},{
+  0,
+  0,
+  1,
+},{
+  1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_artilleryFrigate",{
+  1862,
+  361,
+  434,
+},{
+  0,
+  0,
+  1,
+},{
+  1,
+  0,
+  0,
+},0)
+paradeSlot("Vgr_Carrier",{
+  0,
+  -371,
+  2782,
+},{
+  0,
+  0,
+  1,
+},{
+  0,
+  1,
+  0,
+},1000)
+paradeSlot("Vgr_Carrier_Ops",{
+  -1000,
+  -371,
+  2782,
+},{
+  0,
+  0,
+  1,
+},{
+  0,
+  1,
+  0,
+},1000)
+paradeSlot("Vgr_WeaponPlatform_gun",{
+  -213,
+  -306,
+  1685,
+},{
+  0,
+  0,
+  1,
+},{
+  0,
+  1,
+  0,
+},0)
+paradeSlot("Vgr_WeaponPlatform_missile",{
+  243,
+  -306,
+  1689,
+},{
+  0,
+  0,
+  1,
+},{
+  0,
+  1,
+  0,
+},0)
+paradeSlot("misc",{
+  5208,
+  0,
+  -4878,
+},{
+  0,
+  0,
+  1,
+},{
+  -1,
+  0,
+  0,
+},0)

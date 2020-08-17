@@ -1,0 +1,177 @@
+NewShipType = StartShipConfig()
+NewShipType.displayedName = "Lance Frigate"
+NewShipType.sobDescription = "Frigate Class: Anti-Corvette"
+NewShipType.maxhealth = 40000
+NewShipType.regentime = 900
+NewShipType.minRegenTime = 90
+NewShipType.sideArmourDamage = 1.2
+NewShipType.rearArmourDamage = 1.2
+NewShipType.isTransferable = 1
+NewShipType.useEngagementRanges = 1
+NewShipType.unitCapsNumber = 2
+NewShipType.SquadronSize = 1
+NewShipType.formationSpacing = 250
+NewShipType.passiveFormation = "dockline"
+NewShipType.defensiveFormation = "broad"
+NewShipType.aggressiveFormation = "delta"
+NewShipType.mass = 100
+NewShipType.collisionMultiplier = 1
+NewShipType.thrusterMaxSpeed = 200
+NewShipType.mainEngineMaxSpeed = 200
+NewShipType.rotationMaxSpeed = 40
+NewShipType.thrusterAccelTime = 7
+NewShipType.thrusterBrakeTime = 2
+NewShipType.mainEngineAccelTime = 5
+NewShipType.mainEngineBrakeTime = 4
+NewShipType.rotationAccelTime = 1.75
+NewShipType.rotationBrakeTime = 1.3
+NewShipType.thrusterUsage = 0.5
+NewShipType.accelerationAngle = 40
+NewShipType.mirrorAngle = 45
+NewShipType.secondaryTurnAngle = 0
+NewShipType.maxBankingAmount = 180
+NewShipType.descendPitch = 90
+NewShipType.goalReachEpsilon = 30
+NewShipType.slideMoveRange = 100
+NewShipType.controllerType = "Ship"
+NewShipType.tumbleStaticX = 10
+NewShipType.tumbleStaticY = 20
+NewShipType.tumbleStaticZ = 5
+NewShipType.tumbleDynamicX = 2
+NewShipType.tumbleDynamicY = 10
+NewShipType.tumbleDynamicZ = 5
+NewShipType.tumbleSpecialDynamicX = 2
+NewShipType.tumbleSpecialDynamicY = 10
+NewShipType.tumbleSpecialDynamicZ = 5
+NewShipType.relativeMoveFactor = 3
+NewShipType.swayUpdateTime = 2
+NewShipType.swayOffsetRandomX = 10
+NewShipType.swayOffsetRandomY = 10
+NewShipType.swayOffsetRandomZ = 10
+NewShipType.swayBobbingFactor = 0.15
+NewShipType.swayRotateFactor = 0
+NewShipType.useTargetRandom = 1
+NewShipType.targetRandomPointXMin = -0.3
+NewShipType.targetRandomPointXMax = 0.3
+NewShipType.targetRandomPointYMin = -0.6
+NewShipType.targetRandomPointYMax = 0.29
+NewShipType.targetRandomPointZMin = -0.84
+NewShipType.targetRandomPointZMax = 0.6
+NewShipType.dustCloudDamageTime = 160
+NewShipType.nebulaDamageTime = 200
+NewShipType.MinimalFamilyToFindPathAround = "MotherShip"
+NewShipType.mirrorAboveManeuver = "FrigImmelMann"
+NewShipType.mirrorBelowManeuver = "Split_S"
+NewShipType.BuildFamily = "Frigate_Vgr"
+NewShipType.AttackFamily = "Frigate"
+NewShipType.DockFamily = "Frigate"
+NewShipType.AvoidanceFamily = "Frigate"
+NewShipType.DisplayFamily = "Frigate"
+NewShipType.AutoFormationFamily = "Frigate"
+NewShipType.CollisionFamily = "Big"
+NewShipType.ArmourFamily = "MediumArmour"
+NewShipType.UnitCapsFamily = "Frigate"
+NewShipType.fighterValue = 0
+NewShipType.corvetteValue = 0
+NewShipType.frigateValue = 16
+NewShipType.neutralValue = 0
+NewShipType.antiFighterValue = 0
+NewShipType.antiCorvetteValue = 16
+NewShipType.antiFrigateValue = 0
+NewShipType.totalValue = 16
+NewShipType.buildCost = 500
+NewShipType.buildTime = 45
+NewShipType.buildPriorityOrder = 10
+NewShipType.retaliationRange = 5500
+NewShipType.retaliationDistanceFromGoal = 160
+NewShipType.visualRange = 1000
+NewShipType.prmSensorRange = 5000
+NewShipType.secSensorRange = 6000
+NewShipType.detectionStrength = 1
+NewShipType.TOIcon = "Diamond"
+NewShipType.TOScale = 1
+NewShipType.TODistanceFade0 = 9000
+NewShipType.TODistanceDisappear0 = 7000
+NewShipType.TODistanceFade1 = 4500
+NewShipType.TODistanceDisappear1 = 3500
+NewShipType.TODistanceFade2 = 12000
+NewShipType.TODistanceDisappear2 = 76000
+NewShipType.TOGroupScale = 1
+NewShipType.TOGroupMergeSize = 0
+NewShipType.mouseOverMinFadeSize = 0.045
+NewShipType.mouseOverMaxFadeSize = 0.1
+NewShipType.healthBarStyle = 1
+NewShipType.nlips = 0
+NewShipType.nlipsRange = 75000
+NewShipType.nlipsFar = 0
+NewShipType.nlipsFarRange = 0
+NewShipType.SMRepresentation = "HardDot"
+NewShipType.meshRenderLimit = 60000
+NewShipType.dotRenderLimit = 10
+NewShipType.visibleInSecondary = 1
+NewShipType.minLOD = 0.25
+NewShipType.goblinsStartFade = 4500
+NewShipType.goblinsOff = 4500
+NewShipType.upLOD = 4500
+NewShipType.upLOD = 5000
+NewShipType.downLOD = 4515
+NewShipType.downLOD = 5015
+NewShipType.minimumZoomFactor = 0.63
+NewShipType.selectionLimit = 500000
+NewShipType.preciseATILimit = 0
+NewShipType.selectionPriority = 75
+NewShipType.militaryUnit = 1
+addAbility(NewShipType, "MoveCommand", 1, 0)
+addAbility(NewShipType, "CanDock", 1, 1)
+NewShipType.dockTimeBetweenTwoFormations = 1
+NewShipType.dockTimeBeforeStart = 2
+NewShipType.dockNrOfShipsInDockFormation = 1
+NewShipType.dockFormation = "delta"
+NewShipType.queueFormation = "dockline"
+NewShipType.dontDockWithOtherRaceShips = 1
+NewShipType.ignoreRaceWhenDocking = 0
+addAbility(NewShipType, "CanLaunch")
+NewShipType.launchTimeBetweenTwoFormations = 1
+NewShipType.launchTimeBeforeStart = 2
+NewShipType.launchNrOfShipsInDockFormation = 1
+NewShipType.launchFormation = "delta"
+addAbility(NewShipType, "ParadeCommand", 1)
+addAbility(NewShipType, "WaypointMove")
+addAbility(NewShipType, "HyperSpaceCommand", 0, 1, 500, 100000, 1, 3)
+addAbility(NewShipType,"CanAttack",1,1,0,0,0.35,1.5,"Frigate, Fighter, Corvette, Utility, SmallCapitalShip, BigCapitalShip, Munition","FlyRound_Corvette_vs_CapShip",{
+  Fighter = "FlyRound_Corvette_vs_Fighter",
+},{
+  Mothership = "flyround_Corvette_vs_Mothership",
+},{
+  SmallCapitalShip = "FlyBy_VCorvette_vs_CapShip",
+},{
+  BigCapitalShip = "FlyRound_Corvette_vs_CapShip",
+},{
+  SubSystem = "FrontalVsSubSystem_Corvette",
+},{
+  Corvette = "FlyBy_Corvette_vs_Corvette",
+},{
+  Frigate = "Frigate_vs_Frigate",
+})
+addAbility(NewShipType, "GuardCommand", 1, 3000, 600)
+addAbility(NewShipType, "HyperspaceViaGateCommand", 1, 3, 1, 0.3)
+addAbility(NewShipType, "CanBeCaptured", 45, 0.1)
+addAbility(NewShipType, "CanBeRepaired")
+addAbility(NewShipType, "RetireAbility", 0, 1)
+LoadModel(NewShipType,1)
+StartShipWeaponConfig(NewShipType,"Vgr_HD_Missile","Weapon_Missile","Fire_Missile")
+StartShipWeaponConfig(NewShipType,"vgr_FF_Flakbottom","Weapon_Bottom","")
+StartShipHardPointConfig(NewShipType,"Wep_Left","Hardpoint_Left","Weapon","Generic","Indestructible","vgr_ff_lance","","","","","","","","")
+StartShipHardPointConfig(NewShipType,"Wep_Rigt","Hardpoint_Right","Weapon","Generic","Indestructible","vgr_ff_lance","","","","","","","","")
+addShield(NewShipType, "EMP", 310, 20)
+NewShipType.battleScarMaxTriBase = 75
+NewShipType.battleScarMaxTriInc = 100
+NewShipType.sobDieTime = 1
+NewShipType.sobSpecialDieTime = 1
+NewShipType.specialDeathSpeed = 40
+NewShipType.chanceOfSpecialDeath = 0
+NewShipType.deadSobFadeTime = 1
+NewShipType.trailLinger = 2
+setEngineBurn(NewShipType, 4, 1, 1.5, 60, 1.1, 0.1, 0.25, 100)
+setEngineGlow(NewShipType, 1, 1, 1.02, 20, 300, 50, 1.5, { 0.92, 0.21, 0.09, 0.125, })
+loadShipPatchList(NewShipType, "data:sound/sfx/ship/Vaygr/Frigate/", 0, "Engines/VFrigateEng", "", 1, "Ambience/VFrigateAmb", "")

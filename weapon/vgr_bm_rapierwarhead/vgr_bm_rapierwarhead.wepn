@@ -1,0 +1,22 @@
+StartWeaponConfig(NewWeaponType,"Fixed","Missile","Hgn_NukeMain","Normal",350,6000,0,0,0,0,1,0,1,60,0,0,0,0,0,0,0.1,"Normal",0,0,0)
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",10000,16000,"")
+AddWeaponResult(NewWeaponType,"Hit","SpawnWeaponFire","Target",0,0,"Mis_Rapier_Damage")
+AddWeaponResult(NewWeaponType,"Hit","SpawnWeaponFire","Target",0,0,"Mis_Rapier_Flash")
+setPenetration(NewWeaponType,5,0.5,{
+  LightArmour = 0.8,
+},{
+  ResArmour = 0.6,
+},{
+  PlanetKillerArmour = 0,
+},{
+  unarmoured = 0.02,
+})
+setAccuracy(NewWeaponType,1,{
+  Fighter = 0,
+},{
+  Corvette = 0,
+},{
+  munition = 0,
+})
+setAngles(NewWeaponType,180,0,0,0,0)
+setMiscValues(NewWeaponType,0,0)

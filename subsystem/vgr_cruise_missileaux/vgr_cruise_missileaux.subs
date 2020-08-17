@@ -1,0 +1,38 @@
+NewSubSystemType = StartSubSystemConfig()
+NewSubSystemType.displayedName = "Missile Pod"
+NewSubSystemType.sobDescription = "Auxiliary Weapon System\n4 Tubes"
+NewSubSystemType.tacticalIcon = "hexagon"
+NewSubSystemType.tacticalIconMinSize = 0.0035
+NewSubSystemType.tacticalIconMinFadeSize = 0.0045
+NewSubSystemType.tacticalIconMaxFadeSize = 0.008
+NewSubSystemType.groupMergeSize = 0.001
+NewSubSystemType.mouseOverMinFadeSize = 0.045
+NewSubSystemType.mouseOverMaxFadeSize = 0.1
+NewSubSystemType.maxhealth = 10500
+NewSubSystemType.regentime = 200
+NewSubSystemType.nlips = 0
+NewSubSystemType.nlipsRange = 0
+NewSubSystemType.nlipsFar = 0
+NewSubSystemType.nlipsFarRange = 0
+NewSubSystemType.meshRenderLimit = 0.004
+NewSubSystemType.minimumZoomFactor = 0.6800000000000001
+NewSubSystemType.selectionLimit = 0
+NewSubSystemType.preciseATILimit = 0
+NewSubSystemType.selectionPriority = 0
+NewSubSystemType.type = "Weapon"
+NewSubSystemType.typeString = "AuxWpn"
+NewSubSystemType.collateralDamage = 2000
+NewSubSystemType.inactiveTimeAfterDamage = 60
+NewSubSystemType.activateHealthPercentage = 0.5
+NewSubSystemType.costToBuild = 500
+NewSubSystemType.timeToBuild = 55
+NewSubSystemType.isResearch = 0
+NewSubSystemType.visible = 1
+LoadHODFile(NewSubSystemType,1)
+NewSubSystemType.BuildFamily = "SubSystem_Vgr"
+NewSubSystemType.AttackFamily = "SubSystem"
+NewSubSystemType.DockFamily = "CantDock"
+NewSubSystemType.DisplayFamily = "SubSystemSensors"
+NewSubSystemType.ArmourFamily = "MediumArmour"
+StartSubSystemWeaponConfig(NewSubSystemType,"vgr_cruiser_torpedo","Weapon_Missile","Fire_Missle")
+

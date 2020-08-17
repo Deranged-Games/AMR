@@ -1,0 +1,106 @@
+effects = {
+  animations = {
+    animation1 = {
+      name = "Weapon_Left",
+      length = 0.7,
+      loop = 0,
+      parent = "",
+      minimum = 0,
+      maximum = 0,
+      markers = {
+        "",
+      },
+    },
+    animation2 = {
+      name = "Death",
+      length = 1,
+      loop = 0,
+      parent = "",
+      minimum = 0,
+      maximum = 0,
+      markers = {
+        "",
+      },
+    },
+  },
+  events = {
+    event1 = {
+      {
+        "anim",
+        "Death",
+      },
+      {
+        "animtime",
+        "0.4",
+      },
+      {
+        "marker",
+        "Root",
+      },
+      {
+        "fx",
+        "dmg_cloud_main_explosion_combo",
+      },
+      {
+        "sound",
+        "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY",
+      },
+      {
+        "fx_scale",
+        "7",
+      },
+    },
+    event2 = {
+      {
+        "anim",
+        "Weapon_Left",
+      },
+      {
+        "animtime",
+        "0",
+      },
+      {
+        "marker",
+        "Weapon_Left_Muzzle",
+      },
+      {
+        "fx",
+        "muzzle_flash_combo_small_frigate",
+      },
+      {
+        "sound",
+        "WEAPON/CORVETTE/FIRE/WEAPON_CORVETTE_PULASAR_CANNON_BEAM",
+      },
+      {
+        "fx_nlips",
+        "on",
+      },
+    },
+    event3 = {
+      {
+        "anim",
+        "Weapon_Left",
+      },
+      {
+        "animtime",
+        "1",
+      },
+      {
+        "marker",
+        "Weapon_LeftSlave_Muzzle",
+      },
+      {
+        "fx",
+        "muzzle_flash_combo_small_frigate",
+      },
+      {
+        "sound",
+        "WEAPON/CORVETTE/FIRE/WEAPON_CORVETTE_PULASAR_CANNON_BEAM",
+      },
+      {
+        "fx_nlips",
+        "on",
+      },
+    },
+  },
+}

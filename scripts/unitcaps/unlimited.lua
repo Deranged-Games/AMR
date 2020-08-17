@@ -1,0 +1,8 @@
+UC_Family("Fighter",250)
+UC_Family("Corvette",250)
+UC_Family("Frigate",250)
+UC_Family("Capital",250)
+UC_Family("Utility",250)
+UC_Family("Platform",250)
+UC_Family("Mothership",6)
+UC_Family("SinglePlayerMisc",250)

@@ -1,0 +1,47 @@
+effects = {
+  animations = {
+    animation1 = {
+      name = "IonCannon",
+      length = 1,
+      loop = 0,
+      parent = "",
+      minimum = 0,
+      maximum = 0,
+      markers = {
+        "",
+      },
+    },
+  },
+  events = {
+    event1 = {
+      {
+        "anim",
+        "IonCannon",
+      },
+      {
+        "animtime",
+        "0",
+      },
+      {
+        "marker",
+        "Weapon_T_Muzzle",
+      },
+      {
+        "fx",
+        "ion_beam_kpr_charge_combo",
+      },
+      {
+        "sound",
+        "WEAPON/FRIGATE/FIRE/KWEAPON_FRIGATE_ION_CANNON_BEAM",
+      },
+      {
+        "fx_scale",
+        "4",
+      },
+      {
+        "fx_nlips",
+        "on",
+      },
+    },
+  },
+}

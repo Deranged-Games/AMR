@@ -1,0 +1,22 @@
+displayName = "Trials of the 4/87th"
+Mission = {}
+Mission[1] = {
+	directory = "M01_TrialByFire", 
+	level = "M01_TrialByFire.level",
+	postlevel = function() 
+		postLevelComplete() 
+	end,
+	closure = 1, 
+	displayName = "TRIAL BY FIRE", 
+	description = "After the Mothership fleet leaves take command of a carrier fleet in defense of shipyard Nabaal."
+}
+Mission[2] = {
+	directory = "M02_EscortDuty", 
+	level = "M02_EscortDuty.level",
+	postlevel = function() 
+		postLevelComplete() 
+	end,
+	closure = 2, 
+	displayName = "ESCORT DUTY", 
+	description = "Defend transports making there way past the Angel Moon to Hiigara."
+}

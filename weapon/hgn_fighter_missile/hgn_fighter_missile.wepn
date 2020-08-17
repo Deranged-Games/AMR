@@ -1,0 +1,13 @@
+StartWeaponConfig(NewWeaponType,"Fixed","Missile","hgn_stilleto","Normal",500,2500,0,0,0,0,1,0,0,5,0,0,1,0,0,0,0.1,"Normal",0,0,0)
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",150,150,"")
+AddWeaponResult(NewWeaponType,"Miss","SpawnWeaponFire","Target",0,0,"Mis_Fig")
+setPenetration(NewWeaponType,5,0.5,{
+  ResArmour = 0.6,
+},{
+  PlanetKillerArmour = 0,
+})
+setAccuracy(NewWeaponType,1,{
+  munition = 0,
+})
+setAngles(NewWeaponType,30,0,0,0,0)
+setMiscValues(NewWeaponType,1,0)

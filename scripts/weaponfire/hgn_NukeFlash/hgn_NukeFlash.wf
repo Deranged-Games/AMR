@@ -1,0 +1,11 @@
+hitfx = "dmg_massive_mesh_sphere_ring_lowlensflare"
+blowthroughfx = "dmg_massive_mesh_sphere_ring_lowlensflare"
+bulletfx = "dmg_massive_mesh_sphere_ring_lowlensflare"
+nopenetratefx = "dmg_massive_mesh_sphere_ring_lowlensflare"
+deathtype = "deathCannon"
+hit_sfx = "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA"
+nopenetrate_sfx = "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA"
+hit_clamp = {
+  1,
+  1,
+}

@@ -1,0 +1,22 @@
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Missile","hgn_railbullet","Normal",5000,12000,0,0,0,0,1,1,1,14,0,0,1,1,40,40,0.1,"Normal",1,0,0)
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",4375,4815,"")
+setPenetration(NewWeaponType,50,1,{
+  PlanetKillerArmour = 0,
+},{
+  SubSystemArmour = 0.3,
+})
+setAccuracy(NewWeaponType,1,{
+  Fighter = 0,
+},{
+  Corvette = 0,
+},{
+  munition = 0,
+},{
+  Frigate = 0.9,
+  damage = 1,
+},{
+  ResourceLarge = 0.8,
+  damage = 1,
+})
+setAngles(NewWeaponType,0,-180,180,-5,90)
+setMiscValues(NewWeaponType,3,0.6)

@@ -1,0 +1,8 @@
+StartWeaponConfig(NewWeaponType,"Fixed","SphereBurst","Vgr_SmallMissile","Normal",0,0,120,2,0,0,10,0,0,0,0,0,0,0,0,0,0.1,"Normal",1,0,0)
+setPenetration(NewWeaponType,5,1,{
+  PlanetKillerArmour = 0,
+},{
+  MineArmour = 0,
+},{
+  SubSystemArmour = 0.3,
+})

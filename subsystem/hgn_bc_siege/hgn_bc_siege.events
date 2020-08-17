@@ -1,0 +1,47 @@
+effects = { 
+    animations = { 
+        animation1 = { 
+            name = "Fire", 
+            length = 5, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = { "", }, 
+        }, 
+    }, 
+    events = { 
+        event1 = { 
+            { "anim", "Fire", }, 
+            { "animtime", "0.2", }, 
+            { "marker", "VentL1", }, 
+            { "fx", "ion_cannon_steam_spray", }, 
+            { "sound", "DAMAGE/SMOKE/ION_BEAM_DISCHARGE", }, 
+            { "fx_scale", "1.7", }, 
+        }, 
+        event2 = { 
+            { "anim", "Fire", }, 
+            { "animtime", "0.25", }, 
+            { "marker", "VentL1", }, 
+            { "fx", "ion_cannon_steam_spray", }, 
+            { "sound", "DAMAGE/SMOKE/ION_BEAM_DISCHARGE", }, 
+            { "fx_scale", "1.7", }, 
+        },
+        event3 = { 
+            { "anim", "Fire", }, 
+            { "animtime", "0.4", }, 
+            { "marker", "VentR1", }, 
+            { "fx", "ion_cannon_steam_spray", }, 
+            { "sound", "DAMAGE/SMOKE/ION_BEAM_DISCHARGE", }, 
+            { "fx_scale", "1.7", }, 
+        }, 
+        event4 = { 
+            { "anim", "Fire", }, 
+            { "animtime", "0.45", }, 
+            { "marker", "VentR2", }, 
+            { "fx", "ion_cannon_steam_spray", }, 
+            { "sound", "DAMAGE/SMOKE/ION_BEAM_DISCHARGE", }, 
+            { "fx_scale", "1.7", }, 
+        }, 
+    }, 
+}

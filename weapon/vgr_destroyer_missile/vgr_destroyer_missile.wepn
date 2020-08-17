@@ -1,0 +1,23 @@
+StartWeaponConfig(NewWeaponType,"Fixed","Missile","hgn_AFmissile","Normal",120,7000,0,0,0,0,1,0,0,30,0,0,1,1,0,0,0.1,"Normal",1,1,0)
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",2000,3000,"")
+AddWeaponResult(NewWeaponType,"Hit","SpawnWeaponFire","Target",0,0,"Mis_Hvy_Concussion")
+AddWeaponResult(NewWeaponType,"Miss","SpawnWeaponFire","Target",0,0,"Mis_Hvy_Area")
+AddWeaponResult(NewWeaponType,"Miss","SpawnWeaponFire","Target",0,0,"Mis_Effect")
+setPenetration(NewWeaponType,50,1,{
+  PlanetKillerArmour = 0,
+},{
+  SubSystemArmour = 0.3,
+},{
+  resarmour = 0.2,
+},{
+  MediumArmour = 0.6,
+})
+setAccuracy(NewWeaponType,1,{
+  Fighter = 0,
+},{
+  Corvette = 0,
+},{
+  munition = 0,
+})
+setAngles(NewWeaponType,180,0,0,0,0)
+setMiscValues(NewWeaponType,0,1)

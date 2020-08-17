@@ -1,0 +1,13 @@
+hitfx = "dmg_pulsar_laser_hit"
+bulletfx = "plasma_bomb_tracer_advanced"
+nopenetratefx = "plasma_hit_spray"
+deathtype = "deathPlasma"
+hit_clamp = {
+  1,
+  1,
+}
+hit_sfx = "WEAPON/CORVETTE/IMPACT/HWEAPON_CORVETTE_PULASAR_CANNON_BEAM_HIT"
+fire_sfx = "WEAPON/FIGHTER/FIRE/WEAPON_FIGHTER_FLECHETTE_REPEATER_SHELL"
+firefx = "muzzle_flash_combo_plasma"
+scartype = "Plasma_Bomb/Plasma_Bomb"
+nopenetrate_sfx = "WEAPON/CORVETTE/IMPACT/HWEAPON_CORVETTE_PULASAR_CANNON_BEAM_HIT"

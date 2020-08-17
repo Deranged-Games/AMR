@@ -1,0 +1,291 @@
+levelDesc = "Easter Egg Hunt"
+maxPlayers = 3
+
+player = {}
+
+player[0] = {
+  id = 0,
+  name = "",
+  resources = 1500,
+  raceID = 1,
+  startPos = 1,
+}
+
+player[1] = {
+  id = 1,
+  name = "",
+  resources = 1500,
+  raceID = 1,
+  startPos = 1,
+}
+
+player[2] = {
+  id = 2,
+  name = "",
+  resources = 1500,
+  raceID = 2,
+  startPos = 1,
+}
+
+function DetermChunk()
+  addPoint("StartPos0", {-12000, 0, 0}, {0, 180, 0})
+  addPoint("StartPos1", {8388, 0, 8388}, {0, -135, 0})
+  addPoint("StartPos2", {8388, 0, -8388}, {0, -45, 0})  
+
+  addSquadron("meg_sajhulknose", "meg_sajhulknose", {2000, 12000, -2000}, -1, {90, 45, 155}, 0, 0)    
+  addSquadron("meg_sajhulkpanels", "meg_sajhulkpanels", {500, 6000, -500}, -1, {-90, 45, 105}, 0, 0)    
+  addSquadron("meg_sajhulkpanels", "meg_sajhulkpanels", {2200, 5000, -2700}, -1, {70, -35, 105}, 0, 0)    
+  addSquadron("meg_sajhulkturret", "meg_sajhulkturret", {-5000, -3000, -9000}, -1, {120, -35, 85}, 0, 0)    
+  addSquadron("meg_sajhulkturret", "meg_sajhulkturret", {500, -2500, 6000}, -1, {10, -115, 55}, 0, 0)    
+  addSquadron("meg_sajhulknose", "meg_sajhulknose", {-1800, -8000, -2100}, -1, {-90, 45, 155}, 0, 0)    
+
+  addAsteroid("Asteroid_4", {-13500, 0, 0}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {9800, 0, 9800}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_4", {9800, 0, -9800}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {-13150, 0, 200}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {9800, 0, 9450}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {9800, 0, -9450}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {-13150, 0, -200}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {9450, 0, 9800}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_3", {9450, 0, -9800}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {220, 10, -300}, 100, 100, 100, 100, 100)
+  addAsteroid("Asteroid_5", {-350, -20, 150}, 100, 100, 100, 100, 100)
+
+
+  addSalvage("slv_chunk_lrg06", {1500, 150, 0}, 150, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-4500, 250, 600}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-1400, 150, 2000}, 100, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-1500, -1150, 4500}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-4500, -250, 6000}, 100, 100, 10, 100, 200)
+  addSalvage("slv_chunk_lrg06", {-1500, 5150, 7500}, 100, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5000, 150, 10100}, 100, 10, 100, 100, 100)
+
+  addSalvage("slv_chunk_lrg06", {1500, 1150, 0}, 100, 10, 100, 10, 100)
+  addSalvage("slv_chunk_lrg06", {4500, 250, -600}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {1100, 1150, -2000}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {800, -50, -750}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {4500, -250, -6000}, 120, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {1500, 550, -7500}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {500, 150, -10100}, 100, 10, 10, 100, 100)
+
+  addSalvage("slv_chunk_lrg06", {-1100, 50, -110}, 210, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-4500, 250, -600}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-400, 1150, -2000}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-2500, -50, -4500}, 410, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-4500, -1250, -6000}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-900, 550, -7500}, 810, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5000, 150, -10100}, 100, 100, 100, 100, 200)
+
+  addSalvage("slv_chunk_lrg06", {500, 50, 1100}, 110, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {2500, 250, 600}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {400, 150, 2000}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {100, -50, 4500}, 160, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {4500, -250, 6000}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {1500, 550, 7500}, 170, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {5000, 150, 10100}, 140, 100, 10, 100, 100)
+
+  addSalvage("slv_chunk_lrg06", {8000, -1000, 4500}, 190, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {8000, -1500, 500}, 100, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {9000, 1000, -3000}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {10000, -500, 4500}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {9000, 0, 0}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {9000, -3000, 5500}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {8000, -2500, 300}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {8800, 2000, -3000}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {8000, -1000, -500}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {8000, -3000, -1000}, 610, 100, 100, 100, 100)
+
+  addSalvage("slv_chunk_lrg06", {-8000, -3000, 3500}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-8000, 1500, 1500}, 170, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-9000, 4000, -1650}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-7900, -500, -2500}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-8100, 2500, 4500}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-11000, -3000, -5500}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-8000, -3500, 3000}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-8800, 5000, -3000}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-10000, 1000, -5500}, 100, 10, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-9500, -4000, -1000}, 710, 10, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-9000, -4500, 1200}, 210, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-9800, 2000, -2000}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {8500, 1000, -2500}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {9500, -2000, -2000}, 310, 100, 100, 100, 100)
+
+
+  addSalvage("slv_chunk_lrg06", {4165, 125, -546}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {5925, -430, -2987}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {5205, -1650, -958}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {5465, 425, -3546}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {6125, 1600, -387}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {5505, -1440, -3958}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {5025, -1650, -2987}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {5705, 1320, -395}, 810, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {5665, -1525, -3546}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {4465, 125, -546}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {4925, 1510, -3987}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {5905, -1530, -358}, 170, 100, 100, 100, 100)
+  
+  addSalvage("slv_chunk_lrg06", {-4165, -1625, -546}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5925, 430, -2987}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5205, 150, -958}, 190, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5465, -425, -3546}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-6125, -1600, -3987}, 100, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5505, 1440, -3958}, 100, 10, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5025, 150, -297}, 100, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5705, -1320, -3958}, 10, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5665, 155, -546}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-4465, -1525, -3546}, 710, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-4925, -510, -387}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5905, 1530, -3958}, 100, 100, 10, 100, 100)
+
+  addSalvage("slv_chunk_lrg06", {4165, 1625, 3546}, 130, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {5925, -430, 2987}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {5205, -150, 958}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {5465, 425, 3546}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {625, 1600, 3987}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {5505, -1440, 358}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {5025, -650, 2987}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {5705, 1320, 3958}, 150, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {5665, -1525, 346}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {4465, 155, 3546}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {4925, 1510, 987}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {5905, -1530, 3958}, 100, 10, 100, 100, 100)
+
+  addSalvage("slv_chunk_lrg06", {-4165, -165, 546}, 210, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5925, 430, 2987}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5205, 1650, 3958}, 100, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5465, -425, 546}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-6125, -100, 3987}, 100, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5505, 1440, 958}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5025, 1650, 2987}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5705, -320, 3958}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5665, 1525, 546}, 100, 90, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-4465, -125, 3546}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-4925, -1510, 3987}, 210, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-5905, 130, 958}, 100, 10, 100, 100, 100)
+
+  addSalvage("slv_chunk_lrg06", {-415, -165, 3546}, 810, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-592, 430, 2987}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-525, 1650, 3958}, 100, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-565, -725, -4546}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-625, -100, -3987}, 100, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-550, 1140, -2958}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {525, 1450, -3987}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {575, -620, -2958}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {566, 1225, -4546}, 100, 90, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {465, -1125, 3546}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {495, -1510, 3987}, 410, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {905, 830, 3958}, 100, 10, 100, 100, 100)
+
+  addSalvage("slv_chunk_lrg06", {-415, -165, 5546}, 310, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-595, 430, 6987}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-505, 1650, 7958}, 100, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-565, -425, -8546}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-625, -100, -5987}, 100, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-550, 1440, -9958}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {525, 1650, -4987}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {575, -320, -5958}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {566, 1525, -8546}, 100, 90, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {465, -125, 4546}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {495, -1510, 7987}, 180, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {905, 130, 6958}, 100, 10, 100, 100, 100)
+
+  addSalvage("slv_chunk_lrg06", {-2415, -165, 3546}, 120, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-2592, 430, 2987}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-2525, 150, 3958}, 100, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-3565, -725, -4546}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-3625, -100, -3987}, 100, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-2550, 1140, -2958}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {2525, 140, -3987}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {3575, -620, -2958}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {2566, 1225, -4546}, 100, 90, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {3465, -1125, 3546}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {2495, -150, 3987}, 140, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {3905, 830, 3958}, 100, 10, 100, 100, 100)
+
+  addSalvage("slv_chunk_lrg06", {-2415, -165, 5546}, 130, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-3595, 430, 6987}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-2505, 1650, 7958}, 100, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-3565, -425, -8546}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-2625, -100, -5987}, 100, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {-3550, 1440, -9958}, 100, 10, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {2525, 1650, -4987}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {3575, -320, -5958}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {2566, 1525, -8546}, 100, 90, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {3465, -125, 4546}, 100, 100, 10, 100, 100)
+  addSalvage("slv_chunk_lrg06", {2495, -1510, 7987}, 120, 100, 100, 100, 100)
+  addSalvage("slv_chunk_lrg06", {3905, 130, 6958}, 100, 10, 100, 100, 100)
+
+  setWorldBoundsInner({0, 0, 0}, {40000.53, 20000.09, 40000.53})
+end
+
+function NonDetermChunk()
+  addPebble("Pebble_0", {-6000, 300, -100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6100, -400, -1900}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-5900, 2900, -2600}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6000, -1300, -6000}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6100, 1300, -8100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-5900, -3300, -6200}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-5800, 1800, -7000}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6100, -2100, -5100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6400, 1400, -5500}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6500, -600, -3200}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6200, 100, 0}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6000, -900, -2000}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6600, 200, -2500}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6100, 000, -3000}, 10000, 10000, 10000)
+
+  addPebble("Pebble_0", {-6100, -3500, 100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6300, 1200, 1900}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6100, -100, 2100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6000, 4000, 4100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6400, -1200, 3100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6500, 1300, 1800}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6600, -1900, 5600}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6300, 2100, 7200}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6900, -800, 6100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6700, 1700, 2100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6800, -100, 1100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {-6000, 300, 3100}, 10000, 10000, 10000)
+
+  addPebble("Pebble_0", {6000, 300, -100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6100, -400, -1900}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {5900, 2900, -2600}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6000, -1300, -6000}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6100, 1300, -8100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {5900, -3300, -6200}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {5800, 1800, -7000}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6100, -2100, -5100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6400, 1400, -5500}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6500, -600, -3200}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6200, 100, 0}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6000, -900, -2000}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6600, 200, -2500}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6100, 000, -3000}, 10000, 10000, 10000)
+
+  addPebble("Pebble_0", {6100, -3500, 100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6300, 1200, 1900}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6100, -100, 2100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6000, 4000, 4100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6400, -1200, 3100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6500, 1300, 1800}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6600, -1900, 5600}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6300, 2100, 7200}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6900, -800, 6100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6700, 1700, 2100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6800, -100, 1100}, 10000, 10000, 10000)
+  addPebble("Pebble_0", {6000, 300, 3100}, 10000, 10000, 10000)
+
+
+  fogSetActive(1)
+  setGlareIntensity(0.005)
+  fogSetColour(0, 0, 0, 1)
+  fogSetStart(1000)
+  fogSetEnd(50000)
+  fogSetType("linear")
+  fogSetDensity(1)
+
+  setLevelShadowColour(0, 0, 0, 0)
+  loadBackground("m14")
+  setSensorsManagerCameraDistances(5000, 25000)
+  setDefaultMusic("Data:sound/music/BATTLE/battle_01")
+end

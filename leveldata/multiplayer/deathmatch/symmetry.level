@@ -1,0 +1,167 @@
+-- Symmetry by ep4E1 - Starfisher
+-- designed for use with the MP Risk gametype
+
+levelDesc = "Symmetry"
+maxPlayers = 4
+
+player = {}
+
+player[0] = {
+  id = 0,
+  name = "Vaygr",
+  resources = 1500,
+  raceID = 1,
+  startPos = 1,
+}
+
+player[1] = {
+  id = 1,
+  name = "Hiigaran",
+  resources = 1500,
+  raceID = 0,
+  startPos = 1,
+}
+
+player[2] = {
+  id = 2,
+  name = "Vaygr",
+  resources = 1500,
+  raceID = 1,
+  startPos = 1,
+}
+
+player[3] = {
+  id = 3,
+  name = "Hiigaran",
+  resources = 1500,
+  raceID = 0,
+  startPos = 1,
+}
+
+
+function DetermChunk()
+  addPoint("StartPos0", {17500, 0, 17500}, {0, 180, 0})
+  addPoint("StartPos1", {17500, 0, -17500}, {0, 90, 0})
+  addPoint("StartPos2", {-17500, 0, 17500}, {0, 180, 0})	
+  addPoint("StartPos3", {-17500, 0, -17500}, {0, 90, 0})
+
+--Middle Asteroid
+addAsteroid("Asteroid_5", {0.0, 0.0, 0.0}, 120, 0, 0, 0, 0)
+
+
+--Start Roids
+addAsteroid("Asteroid_5", {15600.0, 0.0, 15600.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_5", {15100.0, 0.0, 15100.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_3", {14700.0, 0.0, 14700.0}, 120, 0, 0, 0, 0)
+
+--Upper Right Quick Expansions
+addAsteroid("Asteroid_4", {9200.0, 0.0, 9200.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_4", {7600.0, 0.0, 16500.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_4", {16500.0, 0.0, 7600.0}, 120, 0, 0, 0, 0)
+
+--Start Roids
+addAsteroid("Asteroid_5", {-15600.0, 0.0, 15600.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_5", {-15100.0, 0.0, 15100.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_3", {-14700.0, 0.0, 14700.0}, 120, 0, 0, 0, 0)
+
+--Upper Right Quick Expansions
+addAsteroid("Asteroid_4", {-9200.0, 0.0, 9200.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_4", {-7600.0, 0.0, 16500.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_4", {-16500.0, 0.0, 7600.0}, 120, 0, 0, 0, 0)
+
+--Start Roids
+addAsteroid("Asteroid_5", {15600.0, 0.0, -15600.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_5", {15100.0, 0.0, -15100.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_3", {14700.0, 0.0, -14700.0}, 120, 0, 0, 0, 0)
+
+--Upper Right Quick Expansions
+addAsteroid("Asteroid_4", {9200.0, 0.0, -9200.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_4", {7600.0, 0.0, -16500.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_4", {16500.0, 0.0,-7600.0}, 120, 0, 0, 0, 0)
+
+--Start Roids
+addAsteroid("Asteroid_5", {-15600.0, 0.0, -15600.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_5", {-15100.0, 0.0, -15100.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_3", {-14700.0, 0.0, -14700.0}, 120, 0, 0, 0, 0)
+
+--Upper Right Quick Expansions
+addAsteroid("Asteroid_4", {-9200.0, 0.0, -9200.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_4", {-7600.0, 0.0, -16500.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_4", {-16500.0, 0.0, -7600.0}, 120, 0, 0, 0, 0)
+
+
+
+--Upper Middle Expansion
+addAsteroid("Asteroid_4", {0.0, 0.0, 17000.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_3", {0.0, 0.0, 16640.0}, 120, 0, 0, 0, 0)
+
+--Right Middle Expansion
+addAsteroid("Asteroid_4", {17000.0, 0.0, 0.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_3", {16640.0, 0.0, 0.0}, 120, 0, 0, 0, 0)
+
+--Left Middle Expansion
+addAsteroid("Asteroid_4", {-17000.0, 0.0, 0.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_3", {-16640.0, 0.0, 0.0}, 120, 0, 0, 0, 0)
+
+--Lower Middle Expansion
+addAsteroid("Asteroid_4", {0.0, 0.0, -17000.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_3", {0.0, 0.0, -16640.0}, 120, 0, 0, 0, 0)
+
+
+
+--Lower Center Expansion
+addAsteroid("Asteroid_3", {0.0, 0.0, -7240.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_4", {0.0, 0.0, -7960.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_3", {0.0, 0.0, -7600.0}, 120, 0, 0, 0, 0)
+
+--Upper Center Expansion
+addAsteroid("Asteroid_3", {0.0, 0.0, 7240.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_4", {0.0, 0.0, 7960.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_3", {0.0, 0.0, 7600.0}, 120, 0, 0, 0, 0)
+
+--Right Center Expansion
+addAsteroid("Asteroid_3", {7240.0, 0.0, 0.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_4", {7960.0, 0.0, 0.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_3", {7600.0, 0.0, 0.0}, 120, 0, 0, 0, 0)
+
+--Lower Center Expansion
+addAsteroid("Asteroid_3", {-7240.0, 0.0, 0.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_4", {-7960.0, 0.0, 0.0}, 120, 0, 0, 0, 0)
+addAsteroid("Asteroid_3", {-7600.0, 0.0, 0.0}, 120, 0, 0, 0, 0)
+
+
+--Dust Puffs
+addDustCloud("polySurface1", "DustCloud_NoRes", {0.0, 0.0, 0.0}, {0, 0, 150, 1}, 0.0, 5000) 
+addDustCloud("polySurface1", "DustCloud_NoRes", {3000.0, 0.0, 3000.0}, {0, 0, 150, 1}, 0.0, 3000)
+addDustCloud("polySurface1", "DustCloud_NoRes", {4500.0, 0.0, 4500.0}, {0, 0, 150, 1}, 0.0, 2000)
+addDustCloud("polySurface1", "DustCloud_NoRes", {6000.0, 0.0, 6000.0}, {0, 0, 150, 1}, 0.0, 1000)
+addDustCloud("polySurface1", "DustCloud_NoRes", {7000.0, 0.0, 7000.0}, {0, 0, 150, 1}, 0.0, 500)
+
+addDustCloud("polySurface1", "DustCloud_NoRes", {-3000.0, 0.0, 3000.0}, {0, 0, 150, 1}, 0.0, 3000)
+addDustCloud("polySurface1", "DustCloud_NoRes", {-4500.0, 0.0, 4500.0}, {0, 0, 150, 1}, 0.0, 2000)
+addDustCloud("polySurface1", "DustCloud_NoRes", {-6000.0, 0.0, 6000.0}, {0, 0, 150, 1}, 0.0, 1000)
+addDustCloud("polySurface1", "DustCloud_NoRes", {-7000.0, 0.0, 7000.0}, {0, 0, 150, 1}, 0.0, 500)
+
+addDustCloud("polySurface1", "DustCloud_NoRes", {3000.0, 0.0, -3000.0}, {0, 0, 150, 1}, 0.0, 3000)
+addDustCloud("polySurface1", "DustCloud_NoRes", {4500.0, 0.0, -4500.0}, {0, 0, 150, 1}, 0.0, 2000)
+addDustCloud("polySurface1", "DustCloud_NoRes", {6000.0, 0.0, -6000.0}, {0, 0, 150, 1}, 0.0, 1000)
+addDustCloud("polySurface1", "DustCloud_NoRes", {7000.0, 0.0, -7000.0}, {0, 0, 150, 1}, 0.0, 500)
+
+addDustCloud("polySurface1", "DustCloud_NoRes", {-3000.0, 0.0, -3000.0}, {0, 0, 150, 1}, 0.0, 3000)
+addDustCloud("polySurface1", "DustCloud_NoRes", {-4500.0, 0.0, -4500.0}, {0, 0, 150, 1}, 0.0, 2000)
+addDustCloud("polySurface1", "DustCloud_NoRes", {-6000.0, 0.0, -6000.0}, {0, 0, 150, 1}, 0.0, 1000)
+addDustCloud("polySurface1", "DustCloud_NoRes", {-7000.0, 0.0, -7000.0}, {0, 0, 150, 1}, 0.0, 500)
+
+  setWorldBoundsInner({0, 0, 0}, {30000, 30000, 30000})
+end
+
+function NonDetermChunk()
+  fogSetActive(0)
+  setGlareIntensity(0)
+  setLevelShadowColour(0, 0, 0, 1)
+  loadBackground("m01")
+  setSensorsManagerCameraDistances(50, 50000)  
+  setDefaultMusic("Data:sound/music/battle/battle_keeper")
+end
+
+

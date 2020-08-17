@@ -1,0 +1,29 @@
+NewSubSystemType = StartSubSystemConfig()
+NewSubSystemType.displayedName = "Railgun Turret"
+NewSubSystemType.mouseOverMinFadeSize = 0.045
+NewSubSystemType.mouseOverMaxFadeSize = 0.1
+NewSubSystemType.maxhealth = 30000
+NewSubSystemType.regentime = 250
+NewSubSystemType.nlips = 0
+NewSubSystemType.meshRenderLimit = 0.004
+NewSubSystemType.minimumZoomFactor = 0.6800000000000001
+NewSubSystemType.selectionLimit = 3000
+NewSubSystemType.preciseATILimit = 3000
+NewSubSystemType.selectionPriority = 30
+NewSubSystemType.type = "Weapon"
+NewSubSystemType.typeString = "SideTurret"
+NewSubSystemType.collateralDamage = 100
+NewSubSystemType.inactiveTimeAfterDamage = 80
+NewSubSystemType.activateHealthPercentage = 0.1
+NewSubSystemType.costToBuild = 575
+NewSubSystemType.timeToBuild = 60
+NewSubSystemType.isResearch = 0
+NewSubSystemType.visible = 1
+LoadHODFile(NewSubSystemType,1)
+NewSubSystemType.BuildFamily = "SubSystem_Hgn"
+NewSubSystemType.AttackFamily = "Subsystem"
+NewSubSystemType.DockFamily = "CantDock"
+NewSubSystemType.DisplayFamily = "SubSystemModule"
+NewSubSystemType.ArmourFamily = "SubSystemArmour"
+StartSubSystemWeaponConfig(NewSubSystemType,"hgn_destroyer_railgun","Weapon_T","Weapon_Fire")
+

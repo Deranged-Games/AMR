@@ -1,0 +1,23 @@
+StartWeaponConfig(NewWeaponType,"Gimble","Bullet","vgr_laser_med","Normal",3000,5000,0,0,0,0,1,1,1,9,0,0,1,1,60,60,0.1,"Normal",1,0,0)
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",1800,2400,"")
+setPenetration(NewWeaponType,5,1,{
+  PlanetKillerArmour = 0,
+})
+setAccuracy(NewWeaponType,1,{
+  Fighter = 0,
+},{
+  Corvette = 0,
+},{
+  munition = 0,
+},{
+  Frigate = 0.8,
+},{
+  Resource = 0.6,
+},{
+  ResourceLarge = 0.8,
+},{
+  Subsystem = 0.6,
+})
+setAngles(NewWeaponType,20,0,0,0,0)
+setMiscValues(NewWeaponType,0,0.3)
+addAnimTurretSound(NewWeaponType,"Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON")

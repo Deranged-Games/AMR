@@ -1,0 +1,236 @@
+effects = {
+  animations = {
+    animation1 = {
+      name = "Fire_Missle",
+      length = 4,
+      loop = 0,
+      parent = "",
+      minimum = 0,
+      maximum = 0,
+      markers = {
+        "",
+      },
+    },
+    animation2 = {
+      name = "Fire_Missle2",
+      length = 4,
+      loop = 0,
+      parent = "",
+      minimum = 0,
+      maximum = 0,
+      markers = {
+        "",
+      },
+    },
+  },
+  events = {
+    event1 = {
+      {
+        "anim",
+        "Fire_Missle",
+      },
+      {
+        "animtime",
+        "0",
+      },
+      {
+        "marker",
+        "Weapon_Missile_Muzzle",
+      },
+      {
+        "fx",
+        "TORPEDO_STEAM_SPRAY",
+      },
+      {
+        "sound",
+        "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH",
+      },
+      {
+        "fx_scale",
+        "2",
+      },
+    },
+    event2 = {
+      {
+        "anim",
+        "Fire_Missle",
+      },
+      {
+        "animtime",
+        "0.25",
+      },
+      {
+        "marker",
+        "Weapon_MissileSlave_Muzzle",
+      },
+      {
+        "fx",
+        "TORPEDO_STEAM_SPRAY",
+      },
+      {
+        "sound",
+        "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH",
+      },
+      {
+        "fx_scale",
+        "2",
+      },
+    },
+    event3 = {
+      {
+        "anim",
+        "Fire_Missle",
+      },
+      {
+        "animtime",
+        "0.5",
+      },
+      {
+        "marker",
+        "Weapon_MissileSlave1_Muzzle",
+      },
+      {
+        "fx",
+        "TORPEDO_STEAM_SPRAY",
+      },
+      {
+        "sound",
+        "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH",
+      },
+      {
+        "fx_scale",
+        "2",
+      },
+    },
+    event4 = {
+      {
+        "anim",
+        "Fire_Missle",
+      },
+      {
+        "animtime",
+        "0.75",
+      },
+      {
+        "marker",
+        "Weapon_MissileSlave2_Muzzle",
+      },
+      {
+        "fx",
+        "TORPEDO_STEAM_SPRAY",
+      },
+      {
+        "sound",
+        "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH",
+      },
+      {
+        "fx_scale",
+        "2",
+      },
+    },
+    event5 = {
+      {
+        "anim",
+        "Fire_Missle2",
+      },
+      {
+        "animtime",
+        "0",
+      },
+      {
+        "marker",
+        "Weapon_Missile2_Muzzle",
+      },
+      {
+        "fx",
+        "TORPEDO_STEAM_SPRAY",
+      },
+      {
+        "sound",
+        "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH",
+      },
+      {
+        "fx_scale",
+        "2",
+      },
+    },
+    event6 = {
+      {
+        "anim",
+        "Fire_Missle2",
+      },
+      {
+        "animtime",
+        "0.25",
+      },
+      {
+        "marker",
+        "Weapon_Missile2Slave_Muzzle",
+      },
+      {
+        "fx",
+        "TORPEDO_STEAM_SPRAY",
+      },
+      {
+        "sound",
+        "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH",
+      },
+      {
+        "fx_scale",
+        "2",
+      },
+    },
+    event7 = {
+      {
+        "anim",
+        "Fire_Missle2",
+      },
+      {
+        "animtime",
+        "0.5",
+      },
+      {
+        "marker",
+        "Weapon_Missile2Slave1_Muzzle",
+      },
+      {
+        "fx",
+        "TORPEDO_STEAM_SPRAY",
+      },
+      {
+        "sound",
+        "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH",
+      },
+      {
+        "fx_scale",
+        "2",
+      },
+    },
+    event8 = {
+      {
+        "anim",
+        "Fire_Missle2",
+      },
+      {
+        "animtime",
+        "0.75",
+      },
+      {
+        "marker",
+        "Weapon_Missile2Slave2_Muzzle",
+      },
+      {
+        "fx",
+        "TORPEDO_STEAM_SPRAY",
+      },
+      {
+        "sound",
+        "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH",
+      },
+      {
+        "fx_scale",
+        "2",
+      },
+    },
+  },
+}
